@@ -41,7 +41,6 @@ var lineReader = require('readline').createInterface({
     input: fs.createReadStream('Aug_Cursors.tetml')
 });
 
-//var ws= new WriteStream();
 var cnt=0;
 var readNext=false;
 var pastMetaData=false;
