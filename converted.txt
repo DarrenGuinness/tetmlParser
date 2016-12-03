@@ -1,0 +1,403 @@
+  Ashley Dover,  Improving Gestural Interaction With Augmented Cursors
+
+G. Michael Poor
+
+  Baylor UniversityWaco, TX 76706, USAashley_therriault@baylor.edumichael_poor@baylor.edu
+
+  Darren GuinnessUniversity of Colorado BoulderBoulder, CO 80309, USAdarren.guinness@colorado.edu
+
+  Alvin JudeSanta Clara, CA, USAEricsson Researchalvinjude@acm.org
+
+  ABSTRACT
+
+  Gesture-based interaction has become more affordable andubiquitous as an interaction style in recent years. One issuewith gestural pointing is the lack of accuracy with smallertargets. In this paper we propose that the use of augmentedcursors – which has been shown to improve small target acquisitionwith a standard mouse – also improves small targetacquisition for gestural pointing. In our study we exploredthe use of Bubble Lens and Bubble Cursor as a means to improveacquisition of smaller targets, and compared it withinteractions without them. Our study showed that bothmethods significantly improved target selection. As part ofour study, we also identified the parameters in configuringBubble Cursor for optimal results.
+
+  Keywords
+
+  Gestural Interaction; Augmented Cursor
+
+  1. INTRODUCTION
+
+  Over the last decade, the availability of affordable commercialoff-the-shelf components for gestural interaction (i.e.the Xbox Kinect and Leap Motion) have opened the technology
+
+  to the general public as an acceptable alternative forcomputer interaction. However, accuracy can be an issuewhen using mid-air gestures as cursor control or selectionmechanisms [10]. The problem becomes increasingly difficultwhen the user’s target is small or clustered with a number ofother potential targets. For example, it has been noted thata target width of under 64px dramatically increases selectiondifficulty [5]. Given how ubiquitous cursor pointing and selectionis in everyday computer usage, this problem is onethat has been investigated for mouse interaction [12], withmultiple methods showing improvement to the traditionalinteraction. By incorporating some of the more successfulsolutions with mid-air gestures, we will investigate whetheror not the improvements seen when using the mouse can beapplicable to this interaction.
+
+  Permission to make digital or hard copies of all or part of this work for personal orclassroom use is granted without fee provided that copies are not made or distributedfor profit or commercial advantage and that copies bear this notice and the full citationon the first page. Copyrights for components of this work owned by others thanACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish,to post on servers or to redistribute to lists, requires prior specific permissionand/or a fee. Request permissions from permissions@acm.org.
+
+  DOI: http://dx.doi.org/10.1145/2983310.2985765
+
+  SUI ’16, October 15-16, 2016, Tokyo, Japan
+
+  c○ 2016 ACM. ISBN 978-1-4503-4068-7/16/10. . . $15.00
+
+  In this paper, we describe a study to assess the performance(movement time and error rate) and usability (subjectiveworkload) of gestural interaction enhanced with augmentedcursors. Using mid-air gesture based interaction,we compared the standard Point Cursor with the BubbleCursor, which is considered to be an improvement over thestandard point cursor [4], and the Bubble Lens, which hasbeen shown to be an improvement of the Bubble Cursor [9].Once completed, we found that augmented cursors significantlyimproved the performance of gestural interaction, inboth movement time and error rate.
+
+  2. RELATED WORK
+
+  Gestural Interaction, which has been studied for over 3decades, leverages gestures from the body to interact witha computer. Various implementations are typically dividedinto two different types: (1) those that require the user towear gloves, devices, or specific markers and (2) touchlessgestural interaction. The latter leverages the “Come As YouAre” design principle, which states that users should not berequired to wear devices or specific markers to interact witha system [11].
+
+  Recent devices such as the Xbox Kinect, Leap Motion, andMyo Armband have gained popularity amongst researchers.These devices have demonstrated the potential use of gesturalinterfaces in medical professions that require sterile environments[11], as an accessibility device for those with impairments[1], and in mixed reality environments with headmounted displays [3]. Given the accuracy of this technologyand the sensitive nature of usage, it is imperative to find abetter form of selection when using this interaction.
+
+  Since graphical user interaction became the industry standard,
+
+  the mouse was the default selection interaction mechanism.While this interaction has changed little over theyears in regards to the default interaction, there have beenimprovements created for selection [12]. At this time, oneof the fastest and well known general pointing techniquesis the Bubble Cursor [4], in which a target-aware area cursorwith a dynamically resizing activation area allows thecursor to always engulf the nearest target. Granted therehave been some techniques that have equaled [2] or slightlyimproved upon [9] the Bubble Cursor’s performance, nonehave surpassed it for general mouse pointing in all cases.Though it has been shown to improve user interaction,
+
+  the Bubble Cursor has some limitations. While it workswell when a target is surrounded by empty space, the BubbleCursor resorts to acting like a point cursor when thetarget is surrounded by other targets in a tight space [4].
+
+  (a) Point Cursor (b) Bubble Cursor (c) Bubble Lens
+
+  Figure 1: Cropped screenshots of the task with each of the cursors (Point, Bubble, BubbleLens) showing the intended targetin the center (orange outline) surrounded by distractor targets (green).
+
+  This type of interaction is very common in today’s user interfaces(tool palettes, toolbars, etc). The Bubble Lens [9]was developed with the intention of addressing this limitation;when the target is closely surrounded by other targets,the Bubble Lens will automatically magnify nearby targetsusing a technique called kinematic triggering. Kinematictriggering is a technique that “continuously examines an unfoldingvelocity profile to trigger a mode change withoutexplicit invocation [9].” In this work, the authors showed asignificant improvement to the Bubble Cursor in both movementtime and error rates. A different form of augmentedcursors referred to as ‘progressive refinement’ has also beenshown to work with in-air gestural interaction [8].
+
+  3. EXPERIMENT
+
+  This experiment follows the structure of a previous research[9], except the interaction in our experiment uses midairgestures instead of a mouse. The primary focus of thisexperiment was to assess whether augmented cursors canenhance gestural interaction, and improve performance andusability. Based on our observations of gestural interaction,we hypothesized that the threshold for what is considered a“small” and “dense” target may be different for gestural interactionthan from interaction with a mouse. The BubbleLens cursor uses this threshold to determine when to magnifya target. For mouse interaction this threshold was founddetermine whether the threshold should be different for gesturalto be 10 pixels [9]. We conducted an initial pilot study topointing, followed by a full study which compared theperformance of different cursors with gestural interaction.
+
+  3.1 Myo Armband
+
+  The Myo Gesture Control Armband was used to recognizethe arm’s orientation in Euler angles (pitch, yaw, androll) to control the cursor. In this experiment, we used amodeled interaction using spherical coordinates which hasbeen shown to provide better performance, accuracy, andconformance to Fitts’ law [6]. Interactions were performedin a seated position, with participants sitting approximately3 feet from the monitor. Participants were allowed to perform
+
+  the mid-air pointing either rested, with the elbow onthe desk, or unrested but all participants finished the experimentfrom a rested position. Before each round, participantsperformed a calibration stage in which they positioned theirarm at the desired angle for each corner of the screen. Theywere asked to recalibrate the interaction periodically andwere allowed to pause and recalibrate if they experiencedperformance degradation.
+
+  3.2 Augmented Cursors
+
+  We used 3 different cursor types in our study. The PointCursor (Figure 1a), used as a control has a single point of
+
+  activation or hotspot as opposed to area cursors which havelarger hotspots which vary in configuration[4]. The BubbleCursor is a semi-transparent circular area cursor who’ssize varies to ensure that there is always exactly one targetwithin its hotspot [4]. While the cursor works well whena target is surrounded by empty space, the Bubble Cursor(Figure 1b) resorts to acting like a point cursor when thetarget is closely surrounded by other targets [4]. The BubbleLens [9] was developed with the intention of addressingthe above limitation; when the target is closely surroundedby other targets, the Bubble Lens (Figure 1c) will automaticallymagnify nearby targets using a technique called
+
+  kinematic triggering. Kinematic triggering is a techniquethat “continuously examines an unfolding velocity profile totrigger a mode change without explicit invocation [9]”.
+
+  3.3 Experimental Design
+
+  Both the pilot and full study focused on comparing theperformance of different cursors within gestural interactionused a 3 × 3 × 3 within-subjects design which included 3cursor types (Point Cursor, Bubble Cursor, Bubble Lens),3 target widths (diameter of 4, 8, 16 pixels), and 3 spacinglevels (zero spacing, half target-width spacing, full targetwidthspacing). Participants completed the 3 rounds in oneof three orderings, based on the Latin cube ordering of interactiontype and cursor type (Point, Bubble, Bubble Lens).Each round consisted of 16 trials, the first 3 counting aspractice, for each of the 9 effective sizes. Participants completeda total of 3 × 9 × 13 = 351 trials.
+
+     MT (ms)
+
+     Error
+
+     mean
+
+     sd
+
+     mean
+
+     sd
+
+     Point Cursor
+
+     7570
+
+     4486
+
+     0.47
+
+     0.24
+
+     Bubble Cursor
+
+     5003
+
+     2543
+
+     0.32
+
+     0.23
+
+     Bubble Lens
+
+     3301
+
+     1084
+
+     0.13
+
+     0.14
+
+  Table 1: Overall means and standard deviation (sd) formovement time (MT) in milliseconds (ms), and error rates.Lower means are better for both.
+
+  3.4 Procedure
+
+  Each study consisted of one session lasting approximately60 minutes. All testing was conducted in a lab setting ona 30-inch monitor with 2560 x 1600 resolution. Each studyincluded 3 rounds of gestural interaction using all 3 cursors.Each round began with 3 practice trials, followed by a setof test trials. The task performed by the participants wasadapted from that used in the original Bubble Lens study [9]:each trial required the participant to select an orange goaltarget from a set of gray distractor targets. In order to move
+
+  on to the next trial, the goal target must be successfullyselected. Target selection was done using the keyboard’sspace bar as the Myo’s gestural recognition was found to beless reliable. Participants were told to select the target asquickly as possible while being as accurate as possible. Theywere also able to ask questions or provide feedback at anypoint during the experiment. After each round, participantswere asked to fill out a Likert scale survey, and at the endof the experiment were asked to rank all rounds performedin order of preference.
+
+  3.5 Pilot Study
+
+  In order to understand what a small target meant withinthe context of gestural pointing, similar to previous research[9]. We conducted a pilot as described above with 7 Participants(6 male, 1 female) from a local university. The pilotshowed that the Bubble Lens improved performance over theother cursors in both movement time and error rate for effectivesizes 16 pixels or below. Thus we allowed the BubbleLens to deploy for effective sizes 16 pixels or below.
+
+  3.6 Full Study
+
+  In order to better understand and validate the findingsfrom the pilot we conducted a larger validation study withthe same factors as above but with a larger sample size. Thestudy was conducted to determine if the augmented cursorimprovements held within a larger statistical sample, and toidentify the situations in which the cursors did well.
+
+  3.6.1 Participants
+
+  Eighteen people participated in the study (12 male, 6 female)and all were university students. The age of participantsranged from 18 to 24, with an average age of 20.5.Fourteen of the participants indicated prior experience witha gestural input device.
+
+  3.6.2 Performance Results
+
+  Movement time (recorded from first cursor movement untiltarget selection) and error rate (percentage of trials inwhich the goal target was not successfully selected on thefirst attempt) were recorded for and are shown in Table 1.
+
+  Given that the experiment was within-subjects, a repeated
+
+  measures analysis of variance for both movement time anderror rate were performed. The results for movement timewere as followed: significant difference between cursor types(ggF (1.552, 26.383) = 110.933, p &lt; 0.001, η 2 p = 0.867),a significant difference between effective sizes (ggF (2.230,37.909) = 76.508, p &lt; 0.001, η 2 p = 0.818), and a significantdifference between effective sizes and cursor type (ggF(3.179, 54.044) = 14.303, p &lt; 0.001, η 2 p = 0.457). A posthoctest with Fisher’s LSD showed statistical significancebetween all pairs, with all pairs reporting p&lt;.001. We thereforealso measured effect size in Cohen’s d with pooled varianceto evaluate practical significance. An effect size below.2 is generally considered insignificant, .2 to .5 is consideredsmall, .5 to .8 is considered medium, and d above .8 is consideredlarge. We found an effect size of 0.70 between PointCursor and Bubble Cursor, an effect size of 1.30 betweenPoint Cursor and Bubble Lens, and an effect size of 0.87between Bubble Cursor and Bubble Lens.
+
+  For error rate there was a significant difference betweencursor types (ggF (1.959, 33.296) = 93.270, p &lt; 0.001, η 2 p =0.846), a significant difference between effective sizes (ggF(5.265, 89.512) = 59.708, p &lt; 0.001, η 2 p = 0.778), and asignificant difference between effective sizes and cursor type(ggF (7.274, 123.652) = 4.870, p &lt; 0.001, η 2 p = 0.223). posthoctest with Fisher’s LSD showed statistical significancebetween all pairs, with all pairs reporting p&lt;.001. We likewisemeasured effect size in Cohen’s d with pooled variance.This showed an effect size of 0.64 between Point Cursor andBubble Cursor, an effect size of 1.76 between Point Cursorand Bubble Lens, and an effect size of 1.02 between BubbleCursor and Bubble Lens.
+
+  3.6.3 User Feedback
+
+     Point Cur.
+
+     Bubble Cur.
+
+     Bubble Lens
+
+     mean
+
+     sd
+
+     mean
+
+     sd
+
+     mean
+
+     sd
+
+     Mental
+
+     8.94
+
+     5.20
+
+     6.67
+
+     4.39
+
+     4.61
+
+     4.00
+
+     Physical
+
+     11.00
+
+     4.81
+
+     7.94
+
+     3.93
+
+     6.78
+
+     3.35
+
+     Temporal
+
+     8.17
+
+     5.66
+
+     6.56
+
+     4.53
+
+     7.11
+
+     5.32
+
+     Performance
+
+     10.17
+
+     4.68
+
+     6.89
+
+     3.51
+
+     5.72
+
+     3.34
+
+     Effort
+
+     14.56
+
+     4.12
+
+     10.94
+
+     4.17
+
+     8.83
+
+     4.46
+
+     Frustration
+
+     13.89
+
+     4.97
+
+     7.72
+
+     4.20
+
+     6.78
+
+     5.02
+
+  Table 2: Mean and standard deviations of workload ratings(NASA TLX) for each cursor. Lower is better for all.
+
+  After each round of the experiment, participants filled outa NASA TLX survey [7]. Workload was assessed using sixscales for mental demand, physical demand, temporal demand,performance, effort, and frustration. The means andstandard deviation of each feature is shown in table 2. Fromthis table we see that, in general, participants rated BubbleLens better than the Bubble Cursor, and the Bubble Cursorbetter than the Point Cursor. Friedman’s tests for significanceshowed the following: mental demand (χ 2 (2) = 7.62,p = 0.022), physical demand (χ 2 (2) = 13.0, p = 0.002),temporal demand (χ 2 (2) = 3.39, p = 0.184), performance(χ 2 (2) = 15.13, p &lt; 0.001), effort (χ 2 (2) = 22.12, p &lt; .001),and frustration (χ 2 (2) = 21.88, p &lt; .001). A pairwise testof significance was done with Dunn’s test (Table 3). TheBubble Lens was rated significantly better than the PointCursor in all aspects except temporal demand.
+
+     PC - BC
+
+     PC - BL
+
+     BC - BL
+
+     Z
+
+     p
+
+     Z
+
+     p
+
+     Z
+
+     p
+
+     Mental
+
+     1.17
+
+     .120
+
+     2.86
+
+     .002
+
+     1.69
+
+     .046
+
+     Physical
+
+     1.84
+
+     .033
+
+     2.83
+
+     .002
+
+     1.00
+
+     .161
+
+     Temporal
+
+     0.78
+
+     .219
+
+     0.61
+
+     .271
+
+     -0.17
+
+     .435
+
+     Performance
+
+     2.17
+
+     .015
+
+     3.01
+
+     .001
+
+     0.84
+
+     .200
+
+     Effort
+
+     2.54
+
+     .006
+
+     3.81
+
+     .000
+
+     1.27
+
+     .103
+
+     Frustration
+
+     3.60
+
+     .000
+
+     3.91
+
+     .000
+
+     0.35
+
+     .363
+
+  Table 3: Pairwise significance testing with Dunn’s test forall possible pairs of Point Cursor (PC), Bubble Cursor (BC)and Bubble Lens (BL). Z-statistic and p-values are shown,significance at (p &lt; .05) is bolded
+
+  4. DISCUSSION
+
+  The results of our study showed that enhancing gesturalinteraction with augmented cursors improves performance,specifically the movement time used to select a target and
+
+  the error rate. This is similar to previous research in mouseinteraction[9]. The results also indicated that the BubbleLens cursor improved performance more than the BubbleCursor, as demonstrated with a high effect size. The magnificationprovided by the Bubble Lens may be a key factorin improving gestural interaction, which tends to be less accuratethan mouse interaction, especially for small targets.
+
+  Subjective feedback from our participants showed that theaugmented cursors did lead to better ratings for gestures,with nearly all workload measures significantly improved.Effort and frustration especially showed large differences betweenthe Point Cursor and the two augmented cursors. Theworkload ratings show that augmented cursors can improvenot only performance for gestural interaction, but also theusers’ experience, which may aid in making gestures a morepractical form of daily computer interaction.
+
+  5. CONCLUSION
+
+  In this paper, our goal was to assess the performance andusability of gestural interaction that has been enhanced with
+
+  augmented cursors. We compared the standard Point Cursor,Bubble Cursor, and Bubble Lens cursor. We foundthat the augmented cursors significantly improved both themovement time and error rate of gestural interaction, withthe Bubble Lens cursor showing the best performance.
+
+  6. FUTURE WORK
+
+  This work has shown the effectiveness of augmented cursorsin gestural interaction with small targets, but at whatsize does the augmented cursor stop being beneficial, if ever?By increasing the size of the targets over the course of experimentation,additional application and conclusion can bemade about the potential of this interaction. Additionallythe approach works with any device which can sense orientation(3+ DOF), potentially allowing for direct externaldisplay control using a smartphone or smartwatch. Futureexperiments might further investigate the power of magnificationin improving gestural interaction. Some individuals,especially those with motor impairments, poor vision, or
+
+  lower hand-eye coordination, may benefit from higher levelsof magnification. The ability to automatically detect andadjust the magnification level may be helpful in such cases.Finally, our experiments were conducted in a desktop setting,
+
+  but it would make sense to perform a similar formof experiment in AR/VR setting where gestures are moreprevalent.
+
+  7. REFERENCES
+
+  [1] G. Bailly, J. Müller, M. Rohs, D. Wigdor, andS. Kratz. Shoesense: a new perspective on gesturalinteraction and wearable applications. In Proceedingsof the SIGCHI Conference on Human Factors inComputing Systems, pages 1239–1248. ACM, 2012.[2] O. Chapuis, J.-B. Labrune, and E. Pietriga. Dynaspot:speed-dependent area cursor. In Proceedings of theSIGCHI Conference on Human Factors in ComputingSystems, pages 1391–1400. ACM, 2009.
+
+  [3] B. Ens, J. D. Hincapié-Ramos, and P. Irani. Etherealplanes: a design framework for 2d information spacein 3d mixed reality environments. In Proceedings ofthe 2nd ACM symposium on Spatial user interaction,pages 2–12. ACM, 2014.
+
+  [4] T. Grossman and R. Balakrishnan. The bubble cursor:enhancing target acquisition by dynamic resizing ofthe cursor’s activation area. In Proceedings of theSIGCHI conference on Human factors in computingsystems, pages 281–290. ACM, 2005.
+
+  [5] D. Guinness, A. Jude, G. M. Poor, and A. Dover.Models for rested touchless gestural interaction. InProceedings of the 3rd ACM Symposium on SpatialUser Interaction, pages 34–43. ACM, 2015.
+
+  [6] D. Guinness, A. Seung, A. Dover, G. M. Poor, andA. Jude. Modeling mid-air gestures with sphericalcoordinates. In Proceedings of the 3rd ACMSymposium on Spatial User Interaction, pages133–133. ACM, 2015.
+
+  [7] S. G. Hart and L. E. Staveland. Development ofnasa-tlx (task load index): Results of empirical andtheoretical research. In P. A. Hancock andN. Meshkati, editors, Human Mental Workload,volume 52 of Advances in Psychology, pages 139 – 183.North-Holland, 1988.
+
+  [8] R. Kopper, F. Bacim, and D. A. Bowman. Rapid andaccurate 3d selection by progressive refinement. In 3DUser Interfaces (3DUI), 2011 IEEE Symposium on,pages 67–74. IEEE, 2011.
+
+using kinematic triggering in the bubble lens foracquiring small, dense targets. In Proceedings of the  [10] D. Vogel and R. Balakrishnan. Distant freehandSIGCHI Conference on Human Factors in ComputingSystems, pages 733–742. ACM, 2014.
+
+pointing and clicking on very large, high resolutiondisplays. In Proceedings of the 18th annual ACMpages 33–42. ACM, 2005.
+
+symposium on User interface software and technology,Vision-based hand-gesture applications.  [11] J. P. Wachs, M. Kölsch, H. Stern, and Y. Edan.Communications of the ACM, 54(2):60–71, 2011.[12] J. O. Wobbrock, J. Fogarty, S.-Y. S. Liu, S. Kimuro,dynamic gain adjustment based on angular deviation.and S. Harada. The angle mouse: target-agnosticIn Proceedings of the SIGCHI Conference on HumanFactors in Computing Systems, pages 1401–1410.ACM, 2009.
+
+  [9] M. E. Mott and J. O. Wobbrock. Beating the bubble:

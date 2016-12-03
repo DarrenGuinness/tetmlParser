@@ -1,0 +1,313 @@
+  AACrobat: Using Mobile Devices to Lower CommunicationBarriers and Provide Autonomy with Gaze-Based AAC
+
+  Alexander Fiannaca 1,2 Ann Paradiso 1 Mira Shah 1 Meredith Ringel Morris 1
+
+  1 Microsoft Research
+
+  Redmond, USA{annpar,mshah,merrie}@microsoft.com
+
+  2 University of Washington
+
+  Seattle, USAfiannaca@cs.uw.edu
+
+  Gaze-based alternative and augmentative communication (AAC)  ABSTRACT
+
+devices provide users with neuromuscular diseases the ability tocommunicate with other people through only the movement oftheir eyes. These devices suffer from slow input, causing a host ofcommunication breakdowns to occur during face-to-face conversations.These breakdowns lead to decreased user autonomy, conversationquality, and communication partner engagement. Attemptsto improve communication through these devices has mainly focusedon throughput and rate enhancement, though this has onlyattained meager results to date. In this work, we address this issuefrom the top down by considering AAC devices as a form of groupwareand designing interactions around this groupware that facilitatebetter conversations for all involved communicators. We firstpresent qualitative findings on issues with gaze-based AAC andend-user communication preferences; we identify several designguidelines for improving these systems and then present AACrobat,a system that embodies these guidelines and introduces novelinteractions by extending gaze-based AAC devices with a mobilecompanion app. Finally, we present early feedback on AACrobatthrough three case studies of users with ALS.
+
+  Categories and Subject Descriptors
+
+  K.4.2 Social Issues: Assistive Technologies for Persons with Disabilities;H.5.3 Group and Organization Interfaces: CollaborativeComputing
+
+  Keywords
+
+  Gaze-Based AAC; Amyotrophic Lateral Sclerosis; ALS.
+
+  1. INTRODUCTION
+
+  Amyotrophic Lateral Sclerosis (ALS) is a neuromuscular diseasecharacterized by the degeneration and death of motor neurons(those that control the movement of muscles), ultimately leading tocomplete paralysis and death [25]. The progression of ALS leads
+
+  Permission to make digital or hard copies of all or part of this work for personalor classroom use is granted without fee provided that copies are notmade or distributed for profit or commercial advantage and that copies bearthis notice and the full citation on the first page. To copy otherwise, or republish,to post on servers or to redistribute to lists, requires prior specificpermission and/or a fee.Conference’10, Month 1–2, 2010, City, State, Country.Copyright 2010 ACM 1-58113-000-0/00/0010 …$15.00.
+
+  to the loss of both mobility and the ability to speak, though patientsoften retain control of the muscles that are responsible formovement of the eyes [2]. Unsurprisingly, therefore, use of gazebasedalternative and augmentative communication technologies iscritical for improving or maintaining the quality of life of peopleliving with ALS [2]. These symptoms necessitate the use of alternativeand augmentative communication (AAC) technologies designedaround eye gaze input to allow people with ALS to communicate.These AAC technologies range from low-tech to hightech,and AAC users often use a set of different devices from thisspectrum depending on the needs and constraints of the moment[22]. Low-tech solutions typically involve communication boards,which are clear plastic boards with letters or symbols on them thatare held by a communication partner; the ALS patient gazes at therelevant symbol on the board, and their gaze is manually interpretedby the partner (e.g., e-tran boards [24], Vocal Eyes [3]). Hightechsolutions for gaze-based communication involve the use ofeye trackers to control computer interfaces (e.g., Tobii Dynavox[31], PRC Accent [7]). With these high-tech devices, users typicallyuse gaze control to type a message, and then gaze-activatea button to play that message out loud via the device’s speakers,using text-to-speech rendering technology. Use of these devices isreliant upon a number of environmental and personal factors includingthe amount of ambient sunlight (which causes infrared interference),the user’s use of glasses, and medications that affectpupil dilation. Unfortunately, even when users are able to effectivelyuse these high-tech gaze-based AAC devices communication isextremely slow (about 10 words per minute) [23]. The stark asymmetryin communication rates between the AAC device user andtheir naturally speaking communication partners limits the type ofcommunication users can have through these devices and causessignificant communication breakdowns.
+
+  In this paper, we present AACrobat, a system consisting of extensionsto an eye-gaze keyboard and a mobile companion applicationthat are designed to alleviate many of the issues that arise due tothe inherently slow rate of communication with gaze-based AACdevices. This paper presents several research contributions:
+
+  1. Reframing the research perspective surrounding AAC communicationto expand the focus beyond low-level technicalissues (e.g., gaze sensing, rate enhancement), instead takinga perspective of AAC devices as a form of groupware andconsidering designing systems with roles to facilitate betterfeedthrough between participants.
+
+  2. Qualitative results providing insights into the often conflictingdesires of AAC device users and their communication partnerswhen it comes to how the two mediate communication throughthe AAC device.
+
+  3. The AACrobat system, a set of AAC device extensions and amobile app that introduce novel interactions designed to addresscommunication challenges for gaze-based AAC deviceusers and their communication partners.
+
+  4. The gathering of preliminary feedback about AACrobat fromusers with ALS and their communication partners.
+
+  2. RELATED WORK
+
+  The use of AAC devices is critical in the care of people with ALS[4]. The only AAC devices applicable to people with ALS arethose with input modalities requiring the fewest voluntary musclemovements [4]. Hill et al. [14] indicated that the fact that gaze inputis usable throughout the duration of the progression of the diseasehas the potential to significantly improve patients’ quality oflife [6]. It has also been shown that the use of eye tracking communicationdevices decreases the burden caregivers feel in caring forpeople with ALS [15].
+
+  Unfortunately, the process of gaze tracking is difficult and highlyerror prone, thus far leading to AAC systems that are very slowin comparison to the rate at which human speech normally occurs.Yorkston et al. [36] found that the average rate of speech of adultswithout disabilities was 190 words per minute (wpm). High-techgaze-based AAC devices produce communication more than an orderof magnitude slower than this [13]. On eye typing systems withdwell-based clicking (focusing on a target for a fixed period oftime generates a click), able-bodied users can reach up to 20 wpmwith an appropriately adjusted dwell time [22]. Dwell-based systemssuffer an inherent cap on throughput due to the fact that usersmust fixate upon targets for some non-zero threshold of time in orderto activate or click them.
+
+  It has been suggested that dwell-free eye typing systems that use“gaze gestures” analogous to swipe-style keyboards [19] could bedeveloped with the theoretical potential to reach throughputs ofup to 46 wpm (based on observations of a simulation with a perfectdwell-free gaze recognizer) [18]. To the contrary of these simulatedresults, the most recent dwell-free systems achieve muchlower throughput rates in practice: the Filteryedping system hada throughput of 7.6 wpm for users with ALS or Duchenne MuscularDystrophy [29], and the EyeSwipe system had a throughputof 11.7 wpm for able-bodied users [20]. The Tobii Dynavox Communicator5 [37], a commercial dwell-free system claiming up toa 100% increase in throughput on a per user basis, became availablein the summer of 2015, but independent metrics reportingend-user throughput with this system are not yet available dueto its novelty. Other non-keyboard-based AAC systems such asDasher [33,34] and EyeWrite [35] have attempted to address thethroughput issue, but none have succeeded in breaking past thecurrent cap of approximately 20 wpm for users with motor impairments.Additionally, rate enhancement techniques such as wordprediction [10,13,32], context-awareness [17], and co-construction[28,30] have attempted to address this problem, but have only resultedin minor throughput improvements. As an example, Paepkeet. al. created a rate enhancement system that displays an AACuser’s current text and a tree of word predictions to communicationpartners on a computer screen, allowing partners to guess out loudat what the AAC user is trying to say [28]. In a similar project,Roark verified that communication partners could effectively enhancecommunication rate by guessing to complete words beingtyped on a computer screen [30]. Unfortunately, neither of thesestudies evaluated their systems with AAC users or studied the impactof this “guessing out loud” interaction on conversation dynamics
+
+  or patient autonomy.
+
+  The research community of AAC technologists has dedicated a significantamount of work towards enhancing the throughput rate ofgaze-based AAC devices; this is an important challenge, thougheven doubling or tripling of gaze-based AAC throughput wouldstill result in communication rates far below those of conversationalspeech. Thus, while improving throughput is important, it is alsoimportant to consider how to address the myriad other communicationproblems that result from low throughput rates. For instance,it takes a long time for users to construct contributions to groupconversations due to the throughput problem, resulting in AAC deviceusers contributing their thoughts after the topic of the conversationhas already shifted. These out-of-context contributionscause conversations to break down, making it difficult for AAC deviceusers to participate in group conversations, which contributesto their isolation [9,27]. Furthermore, this inability to rapidly produceutterances through AAC devices leads to a loss of conversationalcontrol for AAC device users [26] (i.e., it is difficult forAAC users to direct conversations). Fulcher [9] showed that usingshared screens for AAC devices can help to improve communication;however, this presents potential privacy issues in that communicationpartners see the entirety of the information present in theAAC device interface.
+
+  A majority of prior work in improving communication throughgaze-based AAC has focused on addressing communication issuesin a bottom-up manner via throughput and rate enhancement, ratherthan designing the system to facilitate effective communicationgiven the low throughput inherent in the devices. With the exceptionof the study of co-construction [28,30], previous work in thisfield has viewed the design of gaze-based AAC systems withoutregard to the role of communication partners in facilitating effectivecommunication. As described by Fulcher [9], this bottom-upapproach is one-sided, in that it puts the burden of facilitating effectivecommunication solely on the AAC device user without consideringthe social aspect inherent in interpersonal communication.Acknowledging a similar issue for aphasia patients, Kagan presentedthe supported communication intervention for people with aphasiaand their communication partners [16]. Supported conversationfocuses on creating a feeling of autonomy for the person with aphasiawhile specifically teaching communication dyads to share thecommunication load rather than simply training the person withaphasia to develop independent communication skills. In practice,supported conversation involves conceptual training in which communicationpartners are taught both what it may be like to personallyexperience aphasia and the impact it can have for them tolearn skills for supporting their aphasic communication partners,followed by hands-on instruction and practice of communicationskills with people with aphasia. In this research, we take inspirationfrom both the motivation behind supported conversation andfrom the concept of groupware [1], thinking of AAC software as ashared workspace through which effective communication shouldbe enabled by sharing the communication burden among all interlocutors.This perspective inspired our work to explore methodsof facilitating better communication by looking specifically athow communication partners currently interact with AAC usersand their software and how these interactions could be augmentedvia explicit feedthrough mechanisms [1] to improve communication.
+
+  3. FORMATIVE STUDY
+
+  To better understand the issues faced by both gaze-based AAC
+
+  Table 1. Responses to the question, &quot;How do you try to help theAAC device/software user?&quot; for the communication partnerswho indicated they have attempted to help AAC users.
+
+  Individual Responses
+
+  “Read over shoulder, sometimes hit delete word or backspacefor him”
+
+  “Guess the end of a sentence before it has been completelytyped and spoken”
+
+  “Looking at typed message. Trying to finish sentence/thought”
+
+  “Sometimes he just needs a few words and I know him wellenough that I get what he&apos;s saying it save [sic] us both time.”
+
+  “Making questions easier to answer, being very specific.”
+
+  “I give them my advice based off my own experience”
+
+  users and their communication partners during communication, weconducted a formative study to obtain qualitative feedback fromthe target user groups. We designed this formative study to explorecommunication issues as they relate to the interaction betweenAAC users and various types of communication partners.
+
+  3.1 Method
+
+  We created two online questionnaires to gather qualitative data:one for gaze-based AAC users, and one for their communicationpartners . We chose an online questionnaire as the data-gatheringmethod because it was suited to the unique constraints of workingwith ALS patients – the format allowed respondents to answerquestions at their own pace, take rest breaks, and avoid the needto travel. Participants were recruited through an email list for anALS organization in our local metropolitan area consisting of peoplewith ALS and family members and caregivers of people withALS.
+
+  The AAC User questionnaire contained 33 questions and took respondentstwenty-seven minutes on average to complete. Inclusioncriteria were that users must both be diagnosed with a degenerativeneuromuscular disease and must own a gaze-based AAC device.Eight people (six male) completed the AAC User questionnaire;respondents’ ages ranged from 44 to 57 years (mean 51.5).All respondents had been diagnosed with ALS in the last ten yearsand completed the questions without the assistance of a caregiver.
+
+  The Communication Partner questionnaire contained 29 questionsand took respondents thirteen minutes on average to complete. Theonly inclusion criterion was that participants must know and communicatewith someone who has a degenerative neuromusculardisease and uses a gaze-based AAC device. Nine people total (allfemale) completed the Communication Partner questionnaire; respondents’ages ranged from 42 to 68 years (mean 54.8). All respondentsself-identified as spouses, family members, caregivers,and/or friends of people with ALS.
+
+  Note that this relatively small sample size is not surprising given(1) the low incidence rate of ALS, which affects only 2 people per100,000 [25]; (2) the technical difficulty for ALS patients dependenton gaze-based AAC in answering questions autonomously;and (3) the additional demands on ALS patients’ time, with respectto issues such as extreme fatigue and the desire to save energy for
+
+  Table 2. Responses from AAC users indicating their level ofcomfort with communication partners attempting to help themcommunicate (N = neutral, SU = somewhat uncomfortable, VU= very uncomfortable). Note that the remaining two options,comfortable and very comfortable, were never chosen.
+
+  Response/Reason
+
+  (SU) “It erodes one’s confidence over time. It prevents nuancedconversation by cutting it short when person reading or guessingthinks they know the nature of the full communication from afew words.”
+
+  (N) “It doesn&apos;t bother me there trying to help and most of thetime it turns into a game. There are times it does start to get onmy nerves.”
+
+  (VU) “It&apos;s not socially acceptable. Makes me more aware of mylosses in capabilities from this disease…”
+
+  (N) “It depends on the situation. If I am asking for something orsimply conveying information, I am very comfortable withsomeone anticipating my comments but if I am in a conversationwith someone or a group of people, I am very uncomfortablewith someone speaking for me and/or reading over myshoulder.”
+
+  (SU) “Because I’ve always been a detailed, long story typeguy.”
+
+  (SU) “I need independence.”
+
+  high-priority interactions given their extremely shortened lifespan.As with many studies and methods, readers should be aware thatthere may be self-selection biases; for example, it may be the casethat respondents with the skill or motivation to complete an onlinequestionnaire may have different perspectives and experiencesthan those who did not participate.
+
+  3.2 Findings
+
+  3.2.1 Partners&apos; Roles
+
+  Of the nine respondents who completed the entire CommunicationPartner questionnaire, six indicated that they had attempted to helpgaze-based AAC users to communicate or communicate faster inthe past. Of these six, five indicated that this was related to communicationproblems the AAC user experienced, including the AACuser getting left behind in conversations that move faster than theyare able to generate speech (five respondents), the AAC devicehaving a technical issue rendering it temporarily unusable (four respondents),the AAC device generating nonsensical output (two respondents),and message generation taking so long that they wereunsure if the device was broken or not (two respondents).
+
+  Of the six respondents to the Communication Partner questionnairewho indicated that they help AAC users to communicate or communicatefaster, all six described themselves as having a moderatorand/or facilitator role when communicating with the AAC user. Examplesof these responses can be seen in Table 1. Additionally,when asked how comfortable the communication partners werewith performing these actions to try and help the AAC user, five ofthe six respondents indicated on a five-point scale that they were
+
+  Figure 1. Subjective ratings of AAC users&apos; comfort level withcommunication partners attempting to help them communicatebroken down by relationship with 0 being &quot;Very Uncomfortable&quot;and 4 being &quot;Very Comfortable.&quot; Bars indicate standarderror.
+
+  either “neutral,” “somewhat comfortable,” or “very comfortable.”Likewise, five of the six respondents indicated that they believedthe AAC user to be either “neutral,” “somewhat comfortable,” or“very comfortable” with the assistance they rendered.
+
+  3.2.2 Autonomy
+
+  Interestingly, the communication partners’ views were in contrastto those of the AAC users. Of the six respondents who frequentlyuse their communication devices, four responded that they wereeither “neutral,” “somewhat uncomfortable,” or “very uncomfortable”(the lowest three ratings on a five-point scale) with spousesattempting to help them communicate or communicate faster and 5of the 6 respondents indicated the same for close friends (all communicationpartner respondents were spouses or close friends; seeTable 2). When broken down by the type of relationship betweenthe AAC user and the communication partner, there was a generaltrend indicating AAC users are most comfortable with communicationassistance from those partners whom they are closest to socially(Figure 1). Additionally, AAC users were most comfortablesharing information from their device to those partners with whomthey are closest (Figure 2).
+
+  3.3 Discussion of Formative Study Findings
+
+  Several implications for design emerged from the results of our formativestudy. Of greatest salience was the AAC users’ desire tomaximize their autonomy. Due to the fact that degenerative neuromusculardiseases like ALS gradually remove a person’s ability toboth manipulate the surrounding world and communicate with otherpeople, they cause patients to gradually become more dependenton others in order to survive. These diseases are not often associatedwith cognitive deficits, meaning that patients are fully aware ofthe losses they are experiencing. Through statements such as thosein Table 2, respondents made it clear that any AAC technologiesdeveloped for them must either preserve or increase what little autonomythey still have. While in theory all AAC technologies couldbe considered as aiming to support autonomy to various extents,our results indicate that current solutions are insufficient in this respect,and may inadvertently reduce a user’s autonomy, such asby creating behaviors such as over-the-shoulder peeking that negativelyimpacted our participants. We captured this in the first designguideline for the development of our new system: The AAC
+
+  Figure 2. Subjective ratings of AAC users&apos; comfort with sharingAAC device information with communication partners beforechoosing to render speech audibly. 0 is &quot;Share Nothing,&quot;1 is “Share Full Thoughts,” 2 is “Share Words,” 3 is “ShareCharacters,” and 4 is “Share Everything.” Bars indicate standarderror.
+
+  system must preserve or increase users’ autonomy.
+
+  Another interesting result was the disconnect between how communicationpartners view interactions versus how AAC users viewinteractions. The first observation related to this result was that inthe responses in Table 1, half of the partners describe looking overthe AAC user’s shoulder as they type. While this may have ramificationson the autonomy of the AAC user, it also indicates that thecommunication partner has highly limited awareness of the currentcommunication (i.e., up-to-the-moment understanding of the communicationbeing formed on the AAC device) without observingthe visual output of the AAC device intended for the device’s user.A second observation related to this theme was that communicationpartners want to help the AAC users to communicate and theyare comfortable doing so, whereas AAC users are uncomfortablewith help being rendered since it encroaches upon their perceivedautonomy. Together, these observations indicate that AAC systemsshould be designed according to the previously discussed guidelineof autonomy, but should also attempt to balance this with engagingthe communication partners in a way that capitalizes on their desireto help the AAC user and provides them with an accurate mentalmodel of the interaction. We formulated this into the second designguideline for our new system: The AAC system should directlyengage communication partners (in a manner that respects the autonomyof the AAC user).
+
+  The final core result was the concept of privacy among varioustypes of communication partners. The AAC users indicated thatthey felt most comfortable with receiving communication helpfrom their closest communication partners (such as spouses) andleast comfortable receiving such help from general acquaintancesor strangers. This was echoed in the amount of information respondentsindicated they were willing to share with communicationpartners. These observations align well with Blackstone’s Circlesof Communication Partners paradigm [5]. Taking inspiration fromthis paradigm, we synthesized these observations into the third designguideline for our new system: If the AAC system engages communicationpartners by sharing communication data, it must allowthe AAC user to control how information is shared.
+
+  4. AACROBAT
+
+  Given that the three design guidelines we synthesized from our for-
+
+  Figure 1. Example of Asynchronous Messages (1, 1a, 1b, 1c) and Real-Time View of Synchronous Messages (2, 2a, 2b, 2c). The centerimage shows the entire interface of the AACrobat mobile companion app, incorporating the sections for both asynchronous and synchronouscommunication. 1a shows an example communication preference message, 1b shows a pre-composed block message, and1c shows a multimedia message. 2a – 2c show the propagation of communication data in real-time for synchronous messages.
+
+  mative study are in line with issues that have been established inprevious literature [4], yet are still not adequately supported by currentAAC systems, it is clear that we need to change the way wethink and go about the design of AAC systems in order to actuallysupport these core needs. To this end, it is helpful to understandhow different models of disability have influenced the way wethink about and design AAC systems. While many different modelsof disability exist [21], the medical model has most stronglyinfluenced the design of current AAC systems. The medical modeltreats people with disabilities as patients to be fixed or cured,leading to the design of AAC technology that is focused on functionallimitations of the disabled person (e.g. the ability to generatespeech for people with ALS) with much less attention paid toother factors like the other individuals who also interact with theAAC technology (e.g., communication partners). In this work, weare inspired by the social model which instead treats disability asbeing socially constructed, and rather than attempting to fix peoplewith disabilities, attempts to remove physical and attitudinal barrierspreventing inclusion.
+
+  With the social model of disability in mind, we approached thedesign of AACrobat as a groupware system in which all communicatorsare working together to facilitate an effective communication,shifting the burden of communication from the AAC userto the entire group of communicators. In groupware, the conceptof feedthrough [11] describes the feedback produced by a systemwhen an artifact of the system is manipulated, informing otherusers of the system about the manipulation. In this design, weleverage feedthrough in order to provide all communicators withgreater awareness of the AAC user’s communication with respectto the AAC user’s state, the content of the AAC user’s communication,and the context surrounding the communication. We leverageGutwin’s definition of awareness in shared workspaces [12] todefine awareness in this context as communication partners’ up-tothe-momentunderstanding of the AAC user’s communication.
+
+  We named our system AACrobat, a hybrid of “AAC” and “acrobat,”
+
+  because like an agile acrobat, our system’s goal is to increasethe agility of AAC users’ and partners’ communication styles.AACrobat consists of extensions to simple eye-typing AAC softwareplus a mobile companion app. The communication partnerscan install the mobile companion app on their phone for use whenconversing with the AACrobat user. The eye-typing application is adwell-based keyboard compatible with the Tobii EyeX sensor andthe Windows 8.1/10 operating systems. The mobile companion appwas developed using HTML5 and JavaScript in the Apache Cordovaframework, allowing it to run on Android, iOS, and/or WindowsPhone. Communication between the AAC software and thecompanion app is facilitated through a real-time NoSQL databasesystem [38].
+
+  4.1 Features
+
+  We designed each of AACrobat’s features to address one or moreof the design guidelines developed via our formative study. We developedAACrobat primarily to facilitate the scenario of face-toface,synchronous conversation (though some testers were interestedin appropriating it for other conversational scenarios, as we discusslater in the User Feedback section). In this section, we presentthe major features of AACrobat within the context of the designguideline they target.
+
+  4.1.1 Engagement of Communication Partners
+
+  The foremost goal of AACrobat is to engage and improve awarenessof communication partners during co-located/synchronousconversations with AAC users. In order to accomplish this goal,AACrobat has two core features: real-time view of synchronousmessages and asynchronous messages.
+
+  4.1.2.2 Real-Time View of Synchronous Messages
+
+  The first feature designed to engage and improve awareness ofcommunication partners in synchronous communication is the real-
+
+  Figure 2. Example of co-construction functionality in the companionapp inserting a suggestion into the prediction bar of theAAC application. When the communication partner sends aword or phrase suggestion, it appears in the AAC application’sprediction bar among the system-generated predictions.
+
+  time view of synchronous messages (Figure 3). This feature displaysthe communication content that the AAC user is generatingas they generate it, within the AACrobat mobile companion app,acting as an explicit feedthrough mechanism for the communicationcontent. This provides communication partners with an accurateawareness of the content of the ongoing communication andpotentially allows them better understand what the AAC user is attemptingto say. This feature is a distinct shift from designs basedin the medical model in that it allows for AAC-mediated conversationsto be continuous in the same way as traditional speech-basedconversations (i.e. partners “hear” things as they are said), ratherthan simply allowing for the eventual generation of speech. An importanteffect of this feature is that it ensures that communicationpartners do not need to read over the shoulder of the AAC userwhen unsure of what the AAC user is attempting to write.
+
+  4.1.3.3 Asynchronous Messages
+
+  The asynchronous message feature allows AAC users to preparecommunication content before a synchronous interaction occurs.These messages are displayed at the bottom of the AACrobat mobilecurrent synchronous conversation, offering content that can fill thecompanion app (Figure 3), allowing communication partnerscommunication. This is unique from standard message bankingmessages specific to a given conversation the AAC device usertechniques in existing systems in that it is designed for sendingwants to have, and it sends the messages automatically when theeffort on the part of the AAC device user. Three types of asynchronouscommunication partner connects to the app, requiring no additionalmessages can be sent from an AAC device: communication  “Communication Preference” messages are a medium for AACpreferences, pre-composed blocks, and multimedia.
+
+users to express their preferred interactions and etiquette when  as, “Please ask only yes or no questions,” “For private conversations,communicating. For example, this could include messages such
+
+please read over my shoulder so I do not have to displayfor me.” These are particularly useful as a form of communicationmy thoughts for all to hear,” or “Please do not finish my thoughtspartner education, simplifying the process of instructing partners into read them while the AAC user is constructing speech for theAAC user. Communication Preference messages are always displayedconversational gaps that occur due to the low throughput of AACon the first time a communication partner connects with anthe specific communication strategies and preferences of any giventhe AAC user wishes to share with a communication partner, butAAC user through the AACrobat companion app.
+
+  “Pre-Composed Block” messages are general communications thatwould like to prepare ahead of a synchronous conversation. Thesemessages serve to allow AAC users to compose longer or morecomplex thoughts than may be possible to construct during synchronouscommunication, thereby acting as a method for providingconversation. While Communication Preference messages are onlycommunication partners with awareness of the context for a givendisplayed the first time a communication partner connects with ancreated when the communication partner was not connected withthem are available when the communication partner next connects  Finally, “Multimedia” messages allow AAC users to take pictureswith them through the AACrobat mobile app.
+
+on their device and send them to the AACrobat companion app byonly currently supports sending images, it was designed so asdwelling their gaze on a camera-icon keyboard key. While this featureto be easily extensible for sending any form of multimedia contentAAC user, all Pre-Composed Block messages that the AAC userAAC users a rich channel for sharing their experiences with others,that modern AAC devices, which typically utilize tablet computers,can capture (e.g., audio or video). Multimedia messages allowof visual scenes, again supporting awareness of the contextand can increase throughput by reducing the need to type descriptionssurrounding communication.
+
+  Another design guideline derived from our formative study was the  4.1.4 Autonomy
+
+AAC user, beyond the level of autonomy provided by status quonecessity for systems to embrace and enable the autonomy of thesolutions. We respected this design guideline throughout the developmentat their core: autonomy-preserving co-construction and status indicators.
+
+of AACrobat; two particular features have this motivation  Technology-assisted co-construction has the potential to improve  4.1.5.5 Autonomy-Preserving Co-Construction
+
+can have significant effects on the perceived autonomy of the AACthe rate of communication of people using gaze-based AAC; however,the method through which co-construction is implementeduser, as indicated by our formative study. Therefore, our implementationof co-construction through the AACrobat companion appwhile leveraging the contextual knowledge and shared history of  Figure 4 shows how communication partners can use the mobilewas carefully designed to respect the autonomy of the AAC userthe communication partner to potentially improve communication.
+
+the AAC user is constructing a block of text. These suggestions areapp to send suggestions of words or phrases to the AAC device asdisplayed in the prediction bar of the AAC interface in the samemanner as predictions provided by the AAC software. This subtleinteraction empowers the AAC user by ensuring both that AACusers are not interrupted by communication partners guessing at
+
+  4.1.7 Privacy and Control
+
+  they are simply listening to a conversation.
+
+  While allowing end users to control privacy settings for sharingin the development of social AAC systems since limiting privacypersonal information in general applications is important, it is criticalmay have the effect of limiting the autonomy of AAC users.to customize exactly what information is shared with communicationTo this end, AACrobat provides two features that allow AAC userspartners and how that information is shared: mobile audio and  Figure 3. Indicators for device state (left) and AAC user statelevels of sharing.
+
+(right).
+
+  what they are typing, and that AAC users have absolute controlover the degree to which they utilize co-constructions from theircommunication partners. Additionally, this interaction has the benefitof further engaging communication partners by providing themit unfolds rather than simply waiting for a block of communicationa method to directly interact with the block of communication as  4.1.6.6 Status Indicators
+
+to be completed before hearing it spoken by the system’s generated  In the formative study, it was clear that communication partners didnot always have an accurate awareness or understanding of whatspeech.
+
+was occurring on an AAC device without looking over the devicepartners look over the AAC user’s shoulder instead of communicatingface-to-face, it decreases the device user’s autonomyuser’s shoulder to view the device’s visual state. When communicationby making their ability to communicate and interact with othersdependent upon the communication partner’s effort, as well as beingan awkward invasion of their personal space, and of the privacyof items on their screen that they may not wish to share. Tovisual feedback indicators of the state of the AAC device atminimize this effect, AACrobat was designed to incorporate simpleInstant Messaging applications that reveal simple state information5). This feature is reminiscent of status indicators in mainstreamseveral different levels within the mobile companion app (Figuresuch as whether another user is currently typing or not; however,status indicators are typically used in remote communication scenarioswith eye-gaze AAC users, we have adapted this concept to a– due to the unique constraints of face-to-face communicationhas indicators to show whether the AAC device is offline, the AACco-located scenario. At the coarsest level of information, the appuser is calibrating the gaze system, or the AAC device is operatingpartner as to whether the device is malfunctioning or not. Atnormally. This provides general feedback to the communicationa finer-grained level of information, AACrobat indicates what thefor when the user is idle, typing, or “speaking” (having composedAAC user’s current state is within the system. This includes statestext read aloud via a synthesizer); it could easily be extended to includeadditional states such as “emergency” or “assistance needed”based on explicit signaling from the AAC user or readings of thestate of the AAC user’s communication and healthcare apparatus.This level of feedback makes it possible for communication partners  4.1.8.8 Mobile Audio
+
+to know when the AAC user is forming a thought versus when
+
+  This novel interaction allows AAC users to play generated speechin a room) or on the connected mobile phones (mobile audio, audibleeither from their own device (broadcast audio, audible to all peopleonly to connected mobile app users). This allows the AAC userto decide whether or not they wish to have a public conversationcommunication barrier present in many current AAC devices. Additionally,or a private or side conversation, breaking down a long-standingin conjunction with the real-time view of synchronousmessages feature, mobile audio has the potential to enable telephony-likelong distance communication, though it was originally designedfor co-located communication.
+
+  The levels of sharing feature allows AAC users to decide what  4.1.9.9 Levels of Sharing
+
+granularity of communication data partners are able to see in thetwo competing issues. First, gaze input is relatively slowcompanion app. This feature was designed to strike a balance betweenand tedious, therefore requiring users to explicitly set privacy permissionsfor every connected communication partner could makethe system too tedious to use. Second, as determined in the formativestudy, AAC users want to share different amounts of informationwith different types of communication partners (e.g., sharetook inspiration for the design of the privacy settings interfacefrom the Circles of Communication Partners paradigm [5,8],more with family and less with general acquaintances). We thereforeallowing AAC users to classify communication partners into socialcircles and set privacy permissions for entire circles ratherthan individual partners. AACrobat currently includes the five socialcircles “Family,” “Friends,” “Work,” “Medical,” and “Other”that directly correspond with Blackstone’s original circles “Family,”“Friends,” “Acquaintances,” “Paid Workers,” and “UnfamiliarPartners” [5].This is both a user management feature and a privacyfeature. Communication partners must request to connect with anAAC user through the companion application and the AAC usera social circle before the communication partner will be able tomust approve the request and place the communication partner intosee any information from the AAC device. AAC users can thencommunication partners. This allows users to limit the amount ofuse a simple interface to set the permissions for an entire circle ofinformation presented in the real-time view of synchronous messagesfeature to either show updates character-by-character, wordby-word,sentence-by-sentence, block-by-block (fully composedto render that block aloud via the voice synthesizer), or to onlyshow status information and not show text at all. In order to reducethoughts, shared as text via the app only when the AAC user decidesthe amount of effort required from AAC users, we chose sensibledefaults for these privacy settings, setting “Family” to character-by-character,“Friends” and “Medical” to word-by-word, and
+
+  5. USER FEEDBACK
+
+  “Work” and “Other” to block-by-block.
+
+per 100,000) [25] that causes extreme mobility challenges, reachingmany people with ALS for in-depth studies with a large number  Due to the nature of ALS being a very low-incidence disease (2of participants is very challenging. We therefore decided to focusinitially on direct case-study-based feedback, observing a smallnumber of people with ALS using AACrobat to have a conversationwith their spouse or caregiver. Of course, all methods havetheir drawbacks; we must be cautious not to over-generalize fromthe experience of a small number of users, and must also be cognizantof increased risks of overly-positive reactions from short deploymentsdue to effects such as social desirability or novelty biases.Additionally, there are challenges in balancing the amountof in-depth feedback from participants with ALS as compared tothat from their communication partners during a short deploymentgiven the constraints of qualitative research involving people withcomplex communication needs. Larger and longer-term deploymentswill be important to gaining more systematic understandingof the successes and shortcomings of AACrobat’s innovative features;however, these initial case-study observations provide initialoffer insights that can guide future development and evaluation effortsinsight into user perceptions of this new communication style, and  5.1 Case Study One
+
+  The first case study involved Jane, an ALS patient who is completelyfor AAC technologies by ourselves and others.
+
+dependent upon her Tobii AAC device for communication,and her husband Bob. Jane lives in a full-time care facility due toher advanced medical needs. Her husband visits her frequently, andspeaks to her on the phone every evening. For the study, a MicrosoftSurface Pro 3 with an attached Tobii EyeX sensor and runningthe AACrobat system was attached to Jane’s power wheelchairin the same position her standard Tobii device is connected.She was provided instruction on how the complete system workedand was given time to explore the AAC software and practice generatingthe AACrobat companion application. He was instructed onspeech with it. Bob was provided with a smartphone runninghow to use the system and was provided time to explore the features.When Jane and Bob indicated that they were comfortablewith the system, they were instructed to converse about any subjectthey wished, with the goal being for them to have an in-depthconversation.
+
+  Jane and Bob began conversing about Jane’s childhood, but quicklyimmediately interested in the real-time view of synchronous messages,devolved into discussing the AACrobat system itself. Bob wasand see where the conversation is going” and “It’s funny. I had thesaying, “I can follow her thoughts by seeing it printed out,preconception that I would do better with block conversation, but Ican follow it as it comes up here” referring to Jane’s conversationappearing on the smartphone’s screen.
+
+  Bob also noted that with this system, new types of interactionswould be possible for them, such as richer remote communication[a use we had not specifically designed for, but which emergedabout their daily phone calls, Bob said, “I call and she can answerfrom AACrobat’s affordances for multimodal interaction]; talkingthe phone, but she is very limited in what she says… It’s usuallyjust me jabbering away and she says hello.” Jane explained that she  on her Tobii by selecting “Hello” once for yes and twice foruses the “Hello” button on her Tobii device to have yes/no conversations
+
+daily phone calls occur. Bob said, “I would have communication athome with this, where I don’t have anything now.”
+
+no. Both were excited that AACrobat would change the way their  Jane was excited that AACrobat could provide her with better conversationswhere Bob was more engaged, saying, “I like having amore engaged with the conversation!” Additionally, on three occasions,purpose… I’m kinda [sic] social” and “I love that Bob is stayingJane had completed her thought or played the generated speech.Bob laughed in response to the text Jane was typing beforealways sure of how to tell when Jane had finished typing a thought.Related to this type of backchannel communication, Bob was notHe asked twice how he could tell if Jane was done with a thought ininstances where Jane had typed a thought and then she was laughingout a longer thought, she accidentally hit the “clear” button andbut had not hit the “play” button to generate speech from hertext. A final interesting observation was that when Jane was typingdeleted all of her text. While she was no longer able to generatespeech for this text, Bob had already read all of the text on hisphone as she typed it originally, so the conversation was not stalled  The second case study included James and his wife Rhonda. Similaror slowed down because of this speech playback error.
+
+  5.2 Case Study Two
+
+generation device to communicate. James lives at home with histo Jane, James is completely dependent on his Tobii speechwife and a full-time nurse caregiver. Even though James has no independentmobility, he is still an active professional, working in ahigh-power position that requires him to frequently give in-depthand complicated presentations on strategic business operation issues.To accomplish this, James spends large numbers of hours focusedahead of time any answers to questions he predicts might be askedon typing both the content of his presentations and preparingof him when presenting.
+
+  In a similar fashion to the setup of the first case study, the MicrosoftSurface and Tobii EyeX Sensor running AACrobat were attachedto James’ wheelchair and the system was explained to him.of the eye tracker not being able to track James’ eyes is a recurringJames’ eyes on the day of the study. Rhonda explained that this issueUnfortunately, the EyeX sensor was unable to consistently trackissue that occurs with James’ current Tobii device as well.This may be caused by medication that causes James’ eyes to dilate,although we were unable to determine the actual cause duringour study. For this reason, instead of having James and Rhondaall of the available features, and had an open discussion of theirtry out the system themselves, we demoed the system, explainedthoughts regarding AACrobat. We recognize that viewing a demorather than trying the system reduces the fidelity of the feedbackJames and Rhonda were able to provide; however, due to the challengesinvolved in conducting studies with this population (recruitingfrom a very small subject pool, coordinating travel over longdistances for study sessions, scheduling studies around medical appointments,the fatigue and effort involved for participants), adaptingstudy techniques on the fly to make the most of participants’class of research.
+
+capabilities on a particular day is a reality and necessity for this  Rhonda was particularly interested in the status indicators featuresince she envisioned that she could use it to tell when James’ systemis not working when she is not located in the same room ashim. She said, “I appreciate it; just those ‘is it working’ or ‘is itnot’ [status indicators]. [If] I’m in another part of the house, that’s
+
+  strong, because he can’t do anything to tell me it’s not workingwhen I’m in another part of the house. [i.e., if he is attemptingto use his system to communicate with someone else or pre-composingoffline text for his professional needs]” Additionally, Rhondaand James were excited about the prospect of how AACrobatcould change the dynamics of his business meetings. Rhondasaid, “At least five of those things you mentioned [AACrobat features],that’s what I do [to support James’ communication with colleagues]during meetings... You are making me obsolete, which Iwould love to be.” Rhonda noted one feature that AACrobat doesnot currently have that would be useful to further improve James’meetings; she said that James “is a really good multi-tasker,” soit would be useful if people in the business meetings could sendtheir more complicated questions directly to James’ AAC device ina similar manner to how suggestions are sent to the prediction barof the AAC device, to allow James to respond to questions asynchronously.Overall, Rhonda and James were very excited aboutthe system, and Rhonda explained that seeing the potential for thissystem gave them hope: “You are making us feel so unstuck. Before,it was, ‘We have to have the resolve to deal with what we havegot.’”
+
+  5.3 Case Study Three
+
+  The final case study looked at Steven and his girlfriend Jessica.Steven was only recently diagnosed with ALS (within the last twoyears), but the disease progressed very rapidly, leaving him mostlydependent on his Tobii speech generation device for communication,supplemented by occasional attempts to speak with hishighly disarthric speech. As with both of the previous case studies,the Microsoft Surface and Tobii EyeX Sensor running AACrobatwere attached to Steven’s wheelchair and the system was explainedto him. Steven was provided with time to explore the AAC softwareand practice with it. Jessica was provided with a smartphonerunning the companion app and was provided with instruction andtime to explore the application. When both were ready, they wereprovided with the same prompt and instructions as in the first casestudy. Jessica and Steven spent their time discussing recent eventsregarding friends and family, and occasionally provided feedbackregarding the AACrobat system.
+
+  Jessica noted early on that she kept wanting to use the co-constructionfeature to send messages directly to Steven rather than sendingword or phrase suggestions. This is similar to the “question submission”feature requested by Rhonda in the previous case study.When asked if there were any features that they found useful, Jessicareplied, “I think that the suggestions [co-construction feature]…To me that was helpful… I can guess the word and he can moveon,” although Steven said that he “needs more time with it” toknow if the co-construction feature would actually be useful tohim. Jessica also discussed how she would like to use AACrobatfor long-distance communication: “I think we would use that alot [the real-time view of synchronous messages feature], becauseSteven can’t really text anymore and he used to text a lot, and thatwould be like texting like when I’m at work. I can imagine beingat work and him sending stuff to me.” Finally, an interesting observationof how Steven used the system was that he often would typeand generate speech for a thought and then gaze in the direction ofthe person he intended to direct that thought at. This indicates thathaving a feature that allows AAC users to select a specific communicationpartner to direct a block of communication at (rather thanall connected users) could be a useful addition to AACrobat.
+
+  5.4 Discussion of Case Study Findings
+
+  While these case studies were informal and were highly limitedwith respect to both the amount of time users were able to workwith the system (between one and two hours) and the total numberof case studies, they nonetheless provided useful feedback for directingthe future development and testing of the AACrobat system.Interestingly, each of the three sets of users were most excitedby different features of AACrobat. In the first case study, the realtimeview of synchronous messages feature was very successful atengaging all parties in the conversation with both Jane and Bobcommenting on how much more engaged Bob was. This was directlydue to the fact that rather than having to wait to hear whatJane had been trying to communicate, Bob was able to followalong as she constructed her thought. In case study two, Rhondawas excited about the status indicators feature in that it would helpto moderate James’ business meetings in the way that she used tohave to do herself. Finally, in the third case study, Jessica was excitedabout having the ability to participate in co-construction withSteven due to the potential to speed up his rate of communication.
+
+  A key unintended use for current features emerged from the casestudies as important parts of AACrobat: participants noted that thereal-time view of synchronous messages feature was potentiallyuseful for remote conversations such as telephone calls or textmessage-likecommunication, or even simple awareness of urgentneeds or device breakdowns when in a different room of their homethan the AAC user. This leads us to add a fourth design guidelineto our initial set of guidelines for AAC design: The AAC systemshould enable face-to-face communication, but should also supportother forms of communication in which the involved parties are notco-located.
+
+  Additionally, while AACrobat was originally designed with theidea that communication partners would contribute to the conversationthrough speech, it became clear in both case studies twoand three that communication partners expected to be able to sendtext communications directly back to the AAC device through thecompanion app. This would enable both private conversations andcomplex conversations that require the AAC user to have moretime to construct a response than is available in a synchronous conversation.Therefore, an additional design guideline should be consideredin future work on AAC systems: The AAC system shouldenable verbal and textual communication in a two-way fashion insteadof the current one-way status quo.
+
+  6. FUTURE WORK
+
+  Looking towards future work, we plan to complement the informalcase-study approach used in this initial research by conductinglonger-term deployments of AACrobat, to compare its use to moretraditional AAC systems in a controlled study, an approach thatwill be valuable for gaining more nuanced insight into the utilityand challenges ultimately afforded by AACrobat’s features. Giventhat AACrobat was designed with the goal of facilitating bettercommunication for all interlocutors rather than faster communicationfor the AAC user, it does not make sense to evaluate along term deployment in terms of throughput as many previousAAC systems have done. It will be critical to consider what measuresbest evaluate the effectiveness of AACrobat in terms of thesatisfaction of all communicators involved. For example, beyondthroughput, other important measures may be the level of engagementof the communication partners, the relative balance of conversationalturns between AAC users and partners, fatigue levels,perceptions of autonomy, ability to express oneself fully, etc. Re-
+
+  examining the measures appropriate for the evaluation of AAC devicesin light of the shift in framing from the medical model to thesocial model of disability and from single-user devices to groupwaresystems is an important issue for the research and AAC techcommunities to consider.
+
+  While a long term deployment does present the opportunity togather rich data, long term deployments for systems like AACrobatalso present several significant challenges that are worth noting.This includes challenges of recruitment and elicitation of in-depthfeedback, but the foremost challenge is the fact that AAC users requirea host of features like e-mail, TV control, and internet browsingthat are present in modern AAC software stacks, but are notpresent in an experimental framework like the one AACrobat isbuilt upon. Without a full AAC device stack to integrate AACrobatinto, the amount and type of feedback we can expect from participantsis limited since participants will need to switch between theirprimary AAC system and the experimental system throughout thedeployment. We hope that by placing the ideas central to AACrobatin the public domain through this academic publication, manufacturersof AAC technology may be inspired to incorporate ourdesign perspectives and/or system features into their technologiesto allow for wider-spread and longer-term deployments.
+
+  7. CONCLUSION
+
+  In this paper, we introduced AACrobat, a novel AAC system designedas groupware that engages communication partners whilerespecting the privacy and autonomy of the AAC user. In orderto design a system grounded by end-user needs, we conducted aformative, qualitative study of gaze-based AAC users and theircommunication partners, from which we formulated three designguidelines of embracing the autonomy of the AAC user, engagingthe communication partner, and providing privacy and control tothe AAC user. We then developed AACrobat, a novel AAC systemconsisting of a set of extensions to a dwell-based gaze keyboardand a mobile companion app, introducing several novel featuresand interactions, such as pairing the AAC device with a mobile devicefor partners that allows privacy-sensitive previews of communicationsfor partners, facilitates co-construction, and allows multi-modalcommunication, side conversations, and downtime fillers,among other innovations. We gathered feedback on the AACrobatprototype from participants with ALS and their communicationpartners through a set of three informal case studies. This feedbackindicated that AACrobat’s features resonated with the targetaudience, and unanticipated appropriations of these features led usto augment our design guidelines with two further items: enablingdisparate forms of communication and enabling two-way textualcommunication.
+
+  While we integrated AACrobat into a proprietary eye gaze keyboard,the key features of AACrobat would be relatively straightforwardincorporate the innovative interactions we introduce in the AACrobatto integrate into any existing AAC device with an eye gazekeyboard; indeed, we hope AAC manufacturers will be inspired toprototype into mainstream devices. Even modest improvementsin AAC interactions can have a huge quality of life impact on peoplewith ALS and their communication partners. This paper contributes  8. ACKNOWLEDGEMENTS
+
+design insights and new interaction styles that researchers
+
+  can build upon to guide the future development of AAC systems.
+
+  We would like to thank the ALS Association for distributing ourannouncements to potential participants, and to all of our formativestudy and case study participants. We would also like to thankthe members of the NExT Enable Team at Microsoft Research formaking this project possible.
+
+  9. FAKE REFERENCES
+
+  [1]
+
+  [2]
+
+  [3]
+
+  [4]
+
+  [5]
+
+  [6]
+
+  [7]
+
+  [8]
+
+  [9]
+
+  [10]
+
+Syst. 15, 5 (Nov. 1993), 795-825. DOI= http://doi.acm.org/  Bowman, M., Debray, S. K., and Peterson, L. L. 1993. Reasoningabout naming systems. ACM Trans. Program. Lang.10.1145/161468.16147.
+
+  Ding, W. and Marchionini, G. 1997. A Study on VideoBrowsing Strategies. Technical Report. University of Marylandat College Park.
+
+  Fröhlich, B. and Plate, J. 2000. The cubic mouse: a new devicefor three-dimensional input. In Proceedings of theSIGCHI Conference on Human Factors in Computing Systems(The Hague, The Netherlands, April 01 - 06, 2000).CHI &apos;00. ACM, New York, NY, 526-531. DOI=http://doi.acm.org/10.1145/332040.332491.
+
+  Tavel, P. 2007. Modeling and Simulation Design. AK PetersLtd., Natick, MA.
+
+  Sannella, M. J. 1994. Constraint Satisfaction and Debuggingfor Interactive User Interfaces. Doctoral Thesis. UMIOrder Number: UMI Order No. GAX95-09398., Universityof Washington.
+
+  Forman, G. 2003. An extensive empirical study of featureselection metrics for text classification. J. Mach. Learn.Res. 3 (Mar. 2003), 1289-1305.
+
+  Brown, L. D., Hua, H., and Gao, C. 2003. A widget frameworkfor augmented interaction in SCAPE. In Proceedingsof the 16th Annual ACM Symposium on User Interface Softwareand Technology (Vancouver, Canada, November 02 -05, 2003). UIST &apos;03. ACM, New York, NY, 1-10. DOI=http://doi.acm.org/10.1145/964696.964697.
+
+http://dx.doi.org/10.1016/j.jss.2005.05.030.
+
+  Yu, Y. T. and Lau, M. F. 2006. A comparison of MC/DC,  Spector, A. Z. 1989. Achieving application requirements. InSeries. ACM, New York, NY, 19-33. DOI=http://doi.acm.org/10.1145/90417.90738.
+
+  Park, T. H., Saxena, A., Jagannath, S., Wiedenbeck, S., andDistributed Systems, S. Mullender, Ed. ACM Press FrontierForte, A. 2013. Towards a taxonomy of errors in HTML andEducation Research Conference (San Diego, USA, AugustCSS. In Proceedings of the ACM International Computing12 - 14, 2013). ICER &apos;13. ACM, New York, NY, 75-82.DOI= http://dx.doi.org/10.1145/2493394.2493405.
+
+MUMCUT and several other coverage criteria for logicaldecisions. J. Syst. Softw. 79, 5 (May. 2006), 577-590. DOI=

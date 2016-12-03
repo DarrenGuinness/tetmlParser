@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by the PDFlib Text and Image Extraction Toolkit TET (www.pdflib.com) -->
+<TET xmlns="http://www.pdflib.com/XML/TET5/TET-5.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.pdflib.com/XML/TET5/TET-5.0
+ http://www.pdflib.com/XML/TET5/TET-5.0.xsd"
+ version="5.0">
+<Creation platform="Linux-x86_64" tetVersion="5.0" date="2016-12-03T00:46:14-07:00" />
+<Document filename="Aug_Cursors.pdf" pageCount="4" filesize="374167" linearized="false" pdfVersion="1.5">
+<DocInfo>
+<CreationDate>2016-12-03T02:52:38+00:00</CreationDate>
+<Creator>TeX</Creator>
+<ModDate>2016-12-03T02:52:38+00:00</ModDate>
+<Producer>pdfTeX-1.40.16</Producer>
+<Custom key="PTEX.Fullbanner">This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) kpathsea version 6.2.1</Custom>
+</DocInfo>
+<Options> tetml={filename={Aug_Cursors.tetml}}</Options>
+<Pages>
+<Page number="1" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Para>
+ <Box llx="64.62" lly="706.70" urx="545.10" ury="724.64">
+  <Text>Improving Gestural Interaction With Augmented Cursors</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="116.05" lly="653.13" urx="201.16" ury="677.40">
+  <Text>Ashley Dover,
+G. Michael Poor</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="94.17" lly="611.29" urx="223.04" ury="652.64">
+  <Text>Baylor University
+Waco, TX 76706, USA
+ashley_therriault@baylor.edu
+michael_poor@baylor.edu</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="237.11" lly="634.06" urx="375.75" ury="677.40">
+  <Text>Darren Guinness
+University of Colorado Boulder
+Boulder, CO 80309, USA
+darren.guinness@colorado.edu</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="402.16" lly="634.06" urx="500.06" ury="677.40">
+  <Text>Alvin Jude
+Ericsson Research
+Santa Clara, CA, USA
+alvinjude@acm.org</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="575.81" urx="118.24" ury="587.77">
+  <Text>ABSTRACT</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="435.83" urx="292.95" ury="570.33">
+  <Text>Gesture-based interaction has become more affordable and
+ubiquitous as an interaction style in recent years. One issue
+with gestural pointing is the lack of accuracy with smaller
+targets. In this paper we propose that the use of augmented
+cursors – which has been shown to improve small target acquisition
+with a standard mouse – also improves small target
+acquisition for gestural pointing. In our study we explored
+the use of Bubble Lens and Bubble Cursor as a means to improve
+acquisition of smaller targets, and compared it with
+interactions without them. Our study showed that both
+methods significantly improved target selection. As part of
+our study, we also identified the parameters in configuring
+Bubble Cursor for optimal results.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="408.91" urx="105.18" ury="420.87">
+  <Text>Keywords</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="394.47" urx="217.20" ury="403.44">
+  <Text>Gestural Interaction; Augmented Cursor</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="367.55" urx="170.00" ury="379.50">
+  <Text>1. INTRODUCTION</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="176.76" urx="292.98" ury="363.56">
+  <Text>Over the last decade, the availability of affordable commercial
+off-the-shelf components for gestural interaction (i.e.
+the Xbox Kinect and Leap Motion) have opened the technology</Text>
+  <Text>to the general public as an acceptable alternative for
+computer interaction. However, accuracy can be an issue
+when using mid-air gestures as cursor control or selection
+mechanisms [10]. The problem becomes increasingly difficult
+when the user’s target is small or clustered with a number of
+other potential targets. For example, it has been noted that
+a target width of under 64px dramatically increases selection
+difficulty [5]. Given how ubiquitous cursor pointing and selection
+is in everyday computer usage, this problem is one
+that has been investigated for mouse interaction [12], with
+multiple methods showing improvement to the traditional
+interaction. By incorporating some of the more successful
+solutions with mid-air gestures, we will investigate whether
+or not the improvements seen when using the mouse can be
+applicable to this interaction.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="105.37" urx="292.90" ury="160.17">
+  <Text>Permission to make digital or hard copies of all or part of this work for personal or
+classroom use is granted without fee provided that copies are not made or distributed
+for profit or commercial advantage and that copies bear this notice and the full citation
+on the first page. Copyrights for components of this work owned by others than
+ACM must be honored. Abstracting with credit is permitted. To copy otherwise, or republish,
+to post on servers or to redistribute to lists, requires prior specific permission
+and/or a fee. Request permissions from permissions@acm.org.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="55.79" lly="83.67" ulx="55.79" uly="102.39" urx="215.89" ury="102.39" lrx="215.89" lry="83.46">
+  <Text>SUI ’16, October 15-16, 2016, Tokyo, Japan</Text>
+  <Text>c○ 2016 ACM. ISBN 978-1-4503-4068-7/16/10. . . $15.00</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="72.50" urx="231.09" ury="80.47">
+  <Text>DOI: http://dx.doi.org/10.1145/2983310.2985765</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="471.20" urx="555.97" ury="584.78">
+  <Text>In this paper, we describe a study to assess the performance
+(movement time and error rate) and usability (subjective
+workload) of gestural interaction enhanced with augmented
+cursors. Using mid-air gesture based interaction,
+we compared the standard Point Cursor with the Bubble
+Cursor, which is considered to be an improvement over the
+standard point cursor [4], and the Bubble Lens, which has
+been shown to be an improvement of the Bubble Cursor [9].
+Once completed, we found that augmented cursors significantly
+improved the performance of gestural interaction, in
+both movement time and error rate.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="443.31" urx="436.45" ury="455.26">
+  <Text>2. RELATED WORK</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="346.67" urx="555.98" ury="439.32">
+  <Text>Gestural Interaction, which has been studied for over 3
+decades, leverages gestures from the body to interact with
+a computer. Various implementations are typically divided
+into two different types: (1) those that require the user to
+wear gloves, devices, or specific markers and (2) touchless
+gestural interaction. The latter leverages the “Come As You
+Are” design principle, which states that users should not be
+required to wear devices or specific markers to interact with
+a system [11].</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="252.52" urx="555.96" ury="345.18">
+  <Text>Recent devices such as the Xbox Kinect, Leap Motion, and
+Myo Armband have gained popularity amongst researchers.
+These devices have demonstrated the potential use of gestural
+interfaces in medical professions that require sterile environments
+[11], as an accessibility device for those with impairments
+[1], and in mixed reality environments with head
+mounted displays [3]. Given the accuracy of this technology
+and the sensitive nature of usage, it is imperative to find a
+better form of selection when using this interaction.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="74.69" urx="555.97" ury="251.03">
+  <Text>Since graphical user interaction became the industry standard,</Text>
+  <Text>the mouse was the default selection interaction mechanism.
+While this interaction has changed little over the
+years in regards to the default interaction, there have been
+improvements created for selection [12]. At this time, one
+of the fastest and well known general pointing techniques
+is the Bubble Cursor [4], in which a target-aware area cursor
+with a dynamically resizing activation area allows the
+cursor to always engulf the nearest target. Granted there
+have been some techniques that have equaled [2] or slightly
+improved upon [9] the Bubble Cursor’s performance, none
+have surpassed it for general mouse pointing in all cases.
+Though it has been shown to improve user interaction,</Text>
+  <Text>the Bubble Cursor has some limitations. While it works
+well when a target is surrounded by empty space, the Bubble
+Cursor resorts to acting like a point cursor when the
+target is surrounded by other targets in a tight space [4].</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="2" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<PlacedImage image="I0" x="58.70" y="576.69" width="160.69" height="160.52" />
+<PlacedImage image="I1" x="225.51" y="576.69" width="160.69" height="160.52" />
+<PlacedImage image="I2" x="392.33" y="576.69" width="160.69" height="160.52" />
+<Para>
+ <Box llx="107.39" lly="563.44" urx="501.30" ury="571.41">
+  <Text>(a) Point Cursor (b) Bubble Cursor (c) Bubble Lens</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="533.00" urx="555.95" ury="552.43">
+  <Text>Figure 1: Cropped screenshots of the task with each of the cursors (Point, Bubble, BubbleLens) showing the intended target
+in the center (orange outline) surrounded by distractor targets (green).</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="369.12" urx="292.97" ury="503.61">
+  <Text>This type of interaction is very common in today’s user interfaces
+(tool palettes, toolbars, etc). The Bubble Lens [9]
+was developed with the intention of addressing this limitation;
+when the target is closely surrounded by other targets,
+the Bubble Lens will automatically magnify nearby targets
+using a technique called kinematic triggering. Kinematic
+triggering is a technique that “continuously examines an unfolding
+velocity profile to trigger a mode change without
+explicit invocation [9].” In this work, the authors showed a
+significant improvement to the Bubble Cursor in both movement
+time and error rates. A different form of augmented
+cursors referred to as ‘progressive refinement’ has also been
+shown to work with in-air gestural interaction [8].</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="340.87" urx="155.75" ury="352.82">
+  <Text>3. EXPERIMENT</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="52.68" lly="181.47" urx="292.97" ury="336.88">
+  <Text>This experiment follows the structure of a previous research
+[9], except the interaction in our experiment uses midair
+gestures instead of a mouse. The primary focus of this
+experiment was to assess whether augmented cursors can
+enhance gestural interaction, and improve performance and
+usability. Based on our observations of gestural interaction,
+we hypothesized that the threshold for what is considered a
+“small” and “dense” target may be different for gestural interaction
+than from interaction with a mouse. The Bubble
+Lens cursor uses this threshold to determine when to magnify
+a target. For mouse interaction this threshold was found
+to be 10 pixels [9]. We conducted an initial pilot study to
+determine whether the threshold should be different for gestural
+pointing, followed by a full study which compared the
+performance of different cursors with gestural interaction.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="160.87" urx="156.45" ury="172.82">
+  <Text>3.1 Myo Armband</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="74.69" urx="292.96" ury="156.88">
+  <Text>The Myo Gesture Control Armband was used to recognize
+the arm’s orientation in Euler angles (pitch, yaw, and
+roll) to control the cursor. In this experiment, we used a
+modeled interaction using spherical coordinates which has
+been shown to provide better performance, accuracy, and
+conformance to Fitts’ law [6]. Interactions were performed
+in a seated position, with participants sitting approximately
+3 feet from the monitor. Participants were allowed to perform</Text>
+ </Box>
+ <Box llx="316.81" lly="421.42" urx="555.97" ury="503.61">
+  <Text>the mid-air pointing either rested, with the elbow on
+the desk, or unrested but all participants finished the experiment
+from a rested position. Before each round, participants
+performed a calibration stage in which they positioned their
+arm at the desired angle for each corner of the screen. They
+were asked to recalibrate the interaction periodically and
+were allowed to pause and recalibrate if they experienced
+performance degradation.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="402.73" urx="446.38" ury="414.69">
+  <Text>3.2 Augmented Cursors</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="222.41" urx="555.98" ury="398.75">
+  <Text>We used 3 different cursor types in our study. The Point
+Cursor (Figure 1a), used as a control has a single point of</Text>
+  <Text>activation or hotspot as opposed to area cursors which have
+larger hotspots which vary in configuration[4]. The Bubble
+Cursor is a semi-transparent circular area cursor who’s
+size varies to ensure that there is always exactly one target
+within its hotspot [4]. While the cursor works well when
+a target is surrounded by empty space, the Bubble Cursor
+(Figure 1b) resorts to acting like a point cursor when the
+target is closely surrounded by other targets [4]. The Bubble
+Lens [9] was developed with the intention of addressing
+the above limitation; when the target is closely surrounded
+by other targets, the Bubble Lens (Figure 1c) will automatically
+magnify nearby targets using a technique called</Text>
+  <Text>kinematic triggering. Kinematic triggering is a technique
+that “continuously examines an unfolding velocity profile to
+trigger a mode change without explicit invocation [9]”.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="202.71" urx="450.97" ury="214.67">
+  <Text>3.3 Experimental Design</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="74.69" urx="555.98" ury="198.72">
+  <Text>Both the pilot and full study focused on comparing the
+performance of different cursors within gestural interaction
+used a 3 × 3 × 3 within-subjects design which included 3
+cursor types (Point Cursor, Bubble Cursor, Bubble Lens),
+3 target widths (diameter of 4, 8, 16 pixels), and 3 spacing
+levels (zero spacing, half target-width spacing, full targetwidth
+spacing). Participants completed the 3 rounds in one
+of three orderings, based on the Latin cube ordering of interaction
+type and cursor type (Point, Bubble, Bubble Lens).
+Each round consisted of 16 trials, the first 3 counting as
+practice, for each of the 9 effective sizes. Participants completed
+a total of 3 × 9 × 13 = 351 trials.</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="3" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Table llx="79.58" lly="686.74" urx="267.13" ury="741.64">
+ <Row>
+  <Cell colSpan="3" llx="160.13" lly="729.98" urx="196.76" ury="740.74">
+   <Para>
+    <Box llx="160.13" lly="730.88" urx="196.76" ury="739.85">
+     <Text>MT (ms)</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell colSpan="2" llx="227.98" lly="729.98" urx="249.66" ury="740.74">
+   <Para>
+    <Box llx="227.98" lly="730.88" urx="249.66" ury="739.85">
+     <Text>Error</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="83.58" lly="719.52" urx="142.36" ury="730.28">
+  </Cell>
+  <Cell llx="153.12" lly="719.52" urx="174.61" ury="730.28">
+   <Para>
+    <Box llx="153.12" lly="720.42" urx="174.61" ury="729.38">
+     <Text>mean</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="185.36" lly="719.52" urx="203.78" ury="730.28">
+   <Para>
+    <Box llx="190.19" lly="720.42" urx="198.94" ury="729.38">
+     <Text>sd</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="214.52" lly="719.52" urx="236.01" ury="730.28">
+   <Para>
+    <Box llx="214.52" lly="720.42" urx="236.01" ury="729.38">
+     <Text>mean</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="246.77" lly="719.52" urx="263.13" ury="730.28">
+   <Para>
+    <Box llx="250.57" lly="720.42" urx="259.31" ury="729.38">
+     <Text>sd</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="83.58" lly="708.56" urx="142.36" ury="719.32">
+   <Para>
+    <Box llx="90.48" lly="709.46" urx="142.36" ury="718.43">
+     <Text>Point Cursor</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="153.12" lly="708.56" urx="174.61" ury="719.32">
+   <Para>
+    <Box llx="153.12" lly="709.46" urx="171.53" ury="718.43">
+     <Text>7570</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="185.36" lly="708.56" urx="203.78" ury="719.32">
+   <Para>
+    <Box llx="185.36" lly="709.46" urx="203.78" ury="718.43">
+     <Text>4486</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="214.52" lly="708.56" urx="236.01" ury="719.32">
+   <Para>
+    <Box llx="214.52" lly="709.46" urx="230.89" ury="718.43">
+     <Text>0.47</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="246.77" lly="708.56" urx="263.13" ury="719.32">
+   <Para>
+    <Box llx="246.77" lly="709.46" urx="263.13" ury="718.43">
+     <Text>0.24</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="83.58" lly="698.10" urx="142.36" ury="708.86">
+   <Para>
+    <Box llx="83.58" lly="699.00" urx="142.36" ury="707.97">
+     <Text>Bubble Cursor</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="153.12" lly="698.10" urx="174.61" ury="708.86">
+   <Para>
+    <Box llx="153.12" lly="699.00" urx="171.53" ury="707.97">
+     <Text>5003</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="185.36" lly="698.10" urx="203.78" ury="708.86">
+   <Para>
+    <Box llx="185.36" lly="699.00" urx="203.78" ury="707.97">
+     <Text>2543</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="214.52" lly="698.10" urx="236.01" ury="708.86">
+   <Para>
+    <Box llx="214.52" lly="699.00" urx="230.89" ury="707.97">
+     <Text>0.32</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="246.77" lly="698.10" urx="263.13" ury="708.86">
+   <Para>
+    <Box llx="246.77" lly="699.00" urx="263.13" ury="707.97">
+     <Text>0.23</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="83.58" lly="687.64" urx="142.36" ury="698.40">
+   <Para>
+    <Box llx="92.19" lly="688.54" urx="142.36" ury="697.50">
+     <Text>Bubble Lens</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="153.12" lly="687.64" urx="174.61" ury="698.40">
+   <Para>
+    <Box llx="153.12" lly="688.54" urx="171.53" ury="697.50">
+     <Text>3301</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="185.36" lly="687.64" urx="203.78" ury="698.40">
+   <Para>
+    <Box llx="185.36" lly="688.54" urx="203.78" ury="697.50">
+     <Text>1084</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="214.52" lly="687.64" urx="236.01" ury="698.40">
+   <Para>
+    <Box llx="214.52" lly="688.54" urx="230.89" ury="697.50">
+     <Text>0.13</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="246.77" lly="687.64" urx="263.13" ury="698.40">
+   <Para>
+    <Box llx="246.77" lly="688.54" urx="263.13" ury="697.50">
+     <Text>0.14</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+</Table>
+<Para>
+ <Box llx="53.80" lly="647.19" urx="292.96" ury="677.08">
+  <Text>Table 1: Overall means and standard deviation (sd) for
+movement time (MT) in milliseconds (ms), and error rates.
+Lower means are better for both.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="615.06" urx="133.38" ury="627.02">
+  <Text>3.4 Procedure</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="413.82" urx="292.96" ury="611.08">
+  <Text>Each study consisted of one session lasting approximately
+60 minutes. All testing was conducted in a lab setting on
+a 30-inch monitor with 2560 x 1600 resolution. Each study
+included 3 rounds of gestural interaction using all 3 cursors.
+Each round began with 3 practice trials, followed by a set
+of test trials. The task performed by the participants was
+adapted from that used in the original Bubble Lens study [9]:
+each trial required the participant to select an orange goal
+target from a set of gray distractor targets. In order to move</Text>
+  <Text>on to the next trial, the goal target must be successfully
+selected. Target selection was done using the keyboard’s
+space bar as the Myo’s gestural recognition was found to be
+less reliable. Participants were told to select the target as
+quickly as possible while being as accurate as possible. They
+were also able to ask questions or provide feedback at any
+point during the experiment. After each round, participants
+were asked to fill out a Likert scale survey, and at the end
+of the experiment were asked to rank all rounds performed
+in order of preference.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="394.29" urx="137.50" ury="406.25">
+  <Text>3.5 Pilot Study</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="308.11" urx="292.97" ury="390.31">
+  <Text>In order to understand what a small target meant within
+the context of gestural pointing, similar to previous research
+[9]. We conducted a pilot as described above with 7 Participants
+(6 male, 1 female) from a local university. The pilot
+showed that the Bubble Lens improved performance over the
+other cursors in both movement time and error rate for effective
+sizes 16 pixels or below. Thus we allowed the Bubble
+Lens to deploy for effective sizes 16 pixels or below.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="288.59" urx="134.18" ury="300.54">
+  <Text>3.6 Full Study</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="223.33" urx="292.97" ury="284.60">
+  <Text>In order to better understand and validate the findings
+from the pilot we conducted a larger validation study with
+the same factors as above but with a larger sample size. The
+study was conducted to determine if the augmented cursor
+improvements held within a larger statistical sample, and to
+identify the situations in which the cursors did well.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="56.54" lly="203.81" urx="142.73" ury="214.76">
+  <Text>3.6.1 Participants</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="149.01" urx="292.95" ury="199.82">
+  <Text>Eighteen people participated in the study (12 male, 6 female)
+and all were university students. The age of participants
+ranged from 18 to 24, with an average age of 20.5.
+Fourteen of the participants indicated prior experience with
+a gestural input device.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="56.54" lly="129.48" urx="180.15" ury="140.44">
+  <Text>3.6.2 Performance Results</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="85.15" urx="292.96" ury="125.50">
+  <Text>Movement time (recorded from first cursor movement until
+target selection) and error rate (percentage of trials in
+which the goal target was not successfully selected on the
+first attempt) were recorded for and are shown in Table 1.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="62.77" lly="74.69" urx="292.93" ury="83.66">
+  <Text>Given that the experiment was within-subjects, a repeated</Text>
+ </Box>
+ <Box llx="316.81" lly="550.41" urx="555.97" ury="737.21">
+  <Text>measures analysis of variance for both movement time and
+error rate were performed. The results for movement time
+were as followed: significant difference between cursor types
+(ggF (1.552, 26.383) = 110.933, p &lt; 0.001, η 2 p = 0.867),
+a significant difference between effective sizes (ggF (2.230,
+37.909) = 76.508, p &lt; 0.001, η 2 p = 0.818), and a significant
+difference between effective sizes and cursor type (ggF
+(3.179, 54.044) = 14.303, p &lt; 0.001, η 2 p = 0.457). A posthoc
+test with Fisher’s LSD showed statistical significance
+between all pairs, with all pairs reporting p&lt;.001. We therefore
+also measured effect size in Cohen’s d with pooled variance
+to evaluate practical significance. An effect size below
+.2 is generally considered insignificant, .2 to .5 is considered
+small, .5 to .8 is considered medium, and d above .8 is considered
+large. We found an effect size of 0.70 between Point
+Cursor and Bubble Cursor, an effect size of 1.30 between
+Point Cursor and Bubble Lens, and an effect size of 0.87
+between Bubble Cursor and Bubble Lens.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="414.42" urx="555.95" ury="548.91">
+  <Text>For error rate there was a significant difference between
+cursor types (ggF (1.959, 33.296) = 93.270, p &lt; 0.001, η 2 p =
+0.846), a significant difference between effective sizes (ggF
+(5.265, 89.512) = 59.708, p &lt; 0.001, η 2 p = 0.778), and a
+significant difference between effective sizes and cursor type
+(ggF (7.274, 123.652) = 4.870, p &lt; 0.001, η 2 p = 0.223). posthoc
+test with Fisher’s LSD showed statistical significance
+between all pairs, with all pairs reporting p&lt;.001. We likewise
+measured effect size in Cohen’s d with pooled variance.
+This showed an effect size of 0.64 between Point Cursor and
+Bubble Cursor, an effect size of 1.76 between Point Cursor
+and Bubble Lens, and an effect size of 1.02 between Bubble
+Cursor and Bubble Lens.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="319.55" lly="391.17" urx="418.03" ury="402.13">
+  <Text>3.6.3 User Feedback</Text>
+ </Box>
+</Para>
+<Table llx="320.19" lly="290.07" ulx="320.19" uly="376.34" urx="553.49" ury="376.34" lrx="553.49" lry="290.07">
+ <Row>
+  <Cell colSpan="3" llx="386.26" lly="364.69" urx="428.87" ury="375.45">
+   <Para>
+    <Box llx="386.26" lly="365.58" urx="428.87" ury="374.55">
+     <Text>Point Cur.</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell colSpan="2" llx="442.62" lly="364.69" urx="492.12" ury="375.45">
+   <Para>
+    <Box llx="442.62" lly="365.58" urx="492.12" ury="374.55">
+     <Text>Bubble Cur.</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell colSpan="2" llx="502.87" lly="364.69" urx="553.04" ury="375.45">
+   <Para>
+    <Box llx="502.87" lly="365.58" urx="553.04" ury="374.55">
+     <Text>Bubble Lens</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="322.19" lly="354.23" urx="372.52" ury="364.99">
+  </Cell>
+  <Cell llx="383.26" lly="354.23" urx="404.75" ury="364.99">
+   <Para>
+    <Box llx="383.26" lly="355.12" urx="404.75" ury="364.09">
+     <Text>mean</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="415.51" lly="354.23" urx="431.89" ury="364.99">
+   <Para>
+    <Box llx="419.31" lly="355.12" urx="428.06" ury="364.09">
+     <Text>sd</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="442.62" lly="354.23" urx="464.11" ury="364.99">
+   <Para>
+    <Box llx="442.62" lly="355.12" urx="464.11" ury="364.09">
+     <Text>mean</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="474.87" lly="354.23" urx="491.23" ury="364.99">
+   <Para>
+    <Box llx="479.12" lly="355.12" urx="487.86" ury="364.09">
+     <Text>sd</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="502.87" lly="354.23" urx="524.36" ury="364.99">
+   <Para>
+    <Box llx="502.87" lly="355.12" urx="524.36" ury="364.09">
+     <Text>mean</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="535.12" lly="354.23" urx="551.49" ury="364.99">
+   <Para>
+    <Box llx="539.70" lly="355.12" urx="548.46" ury="364.09">
+     <Text>sd</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="322.19" lly="343.27" urx="372.52" ury="354.03">
+   <Para>
+    <Box llx="344.37" lly="344.16" urx="372.51" ury="353.13">
+     <Text>Mental</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="383.26" lly="343.27" urx="404.75" ury="354.03">
+   <Para>
+    <Box llx="383.26" lly="344.16" urx="399.63" ury="353.13">
+     <Text>8.94</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="415.51" lly="343.27" urx="431.89" ury="354.03">
+   <Para>
+    <Box llx="415.51" lly="344.16" urx="431.88" ury="353.13">
+     <Text>5.20</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="442.62" lly="343.27" urx="464.11" ury="354.03">
+   <Para>
+    <Box llx="442.62" lly="344.16" urx="458.99" ury="353.13">
+     <Text>6.67</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="474.87" lly="343.27" urx="491.23" ury="354.03">
+   <Para>
+    <Box llx="474.87" lly="344.16" urx="491.23" ury="353.13">
+     <Text>4.39</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="502.87" lly="343.27" urx="524.36" ury="354.03">
+   <Para>
+    <Box llx="502.87" lly="344.16" urx="519.24" ury="353.13">
+     <Text>4.61</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="535.12" lly="343.27" urx="551.49" ury="354.03">
+   <Para>
+    <Box llx="535.12" lly="344.16" urx="551.49" ury="353.13">
+     <Text>4.00</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="322.19" lly="332.81" urx="372.52" ury="343.57">
+   <Para>
+    <Box llx="339.08" lly="333.70" urx="372.51" ury="342.67">
+     <Text>Physical</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="383.26" lly="332.81" urx="404.75" ury="343.57">
+   <Para>
+    <Box llx="383.26" lly="333.70" urx="404.23" ury="342.67">
+     <Text>11.00</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="415.51" lly="332.81" urx="431.89" ury="343.57">
+   <Para>
+    <Box llx="415.51" lly="333.70" urx="431.89" ury="342.67">
+     <Text>4.81</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="442.62" lly="332.81" urx="464.11" ury="343.57">
+   <Para>
+    <Box llx="442.62" lly="333.70" urx="458.99" ury="342.67">
+     <Text>7.94</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="474.87" lly="332.81" urx="491.23" ury="343.57">
+   <Para>
+    <Box llx="474.87" lly="333.70" urx="491.23" ury="342.67">
+     <Text>3.93</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="502.87" lly="332.81" urx="524.36" ury="343.57">
+   <Para>
+    <Box llx="502.87" lly="333.70" urx="519.24" ury="342.67">
+     <Text>6.78</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="535.12" lly="332.81" urx="551.49" ury="343.57">
+   <Para>
+    <Box llx="535.12" lly="333.70" urx="551.49" ury="342.67">
+     <Text>3.35</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="322.19" lly="322.34" urx="372.52" ury="333.10">
+   <Para>
+    <Box llx="334.12" lly="323.24" urx="372.51" ury="332.21">
+     <Text>Temporal</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="383.26" lly="322.34" urx="404.75" ury="333.10">
+   <Para>
+    <Box llx="383.26" lly="323.24" urx="399.63" ury="332.21">
+     <Text>8.17</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="415.51" lly="322.34" urx="431.89" ury="333.10">
+   <Para>
+    <Box llx="415.51" lly="323.24" urx="431.88" ury="332.21">
+     <Text>5.66</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="442.62" lly="322.34" urx="464.11" ury="333.10">
+   <Para>
+    <Box llx="442.62" lly="323.24" urx="458.99" ury="332.21">
+     <Text>6.56</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="474.87" lly="322.34" urx="491.23" ury="333.10">
+   <Para>
+    <Box llx="474.87" lly="323.24" urx="491.23" ury="332.21">
+     <Text>4.53</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="502.87" lly="322.34" urx="524.36" ury="333.10">
+   <Para>
+    <Box llx="502.87" lly="323.24" urx="519.24" ury="332.21">
+     <Text>7.11</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="535.12" lly="322.34" urx="551.49" ury="333.10">
+   <Para>
+    <Box llx="535.12" lly="323.24" urx="551.49" ury="332.21">
+     <Text>5.32</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="322.19" lly="311.88" urx="372.52" ury="322.64">
+   <Para>
+    <Box llx="322.19" lly="312.78" urx="372.50" ury="321.75">
+     <Text>Performance</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="383.26" lly="311.88" urx="404.75" ury="322.64">
+   <Para>
+    <Box llx="383.26" lly="312.78" urx="404.23" ury="321.75">
+     <Text>10.17</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="415.51" lly="311.88" urx="431.89" ury="322.64">
+   <Para>
+    <Box llx="415.51" lly="312.78" urx="431.89" ury="321.75">
+     <Text>4.68</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="442.62" lly="311.88" urx="464.11" ury="322.64">
+   <Para>
+    <Box llx="442.62" lly="312.78" urx="458.99" ury="321.75">
+     <Text>6.89</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="474.87" lly="311.88" urx="491.23" ury="322.64">
+   <Para>
+    <Box llx="474.87" lly="312.78" urx="491.23" ury="321.75">
+     <Text>3.51</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="502.87" lly="311.88" urx="524.36" ury="322.64">
+   <Para>
+    <Box llx="502.87" lly="312.78" urx="519.24" ury="321.75">
+     <Text>5.72</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="535.12" lly="311.88" urx="551.49" ury="322.64">
+   <Para>
+    <Box llx="535.12" lly="312.78" urx="551.49" ury="321.75">
+     <Text>3.34</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="322.19" lly="301.42" urx="372.52" ury="312.18">
+   <Para>
+    <Box llx="349.08" lly="302.32" urx="372.51" ury="311.29">
+     <Text>Effort</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="383.26" lly="301.42" urx="404.75" ury="312.18">
+   <Para>
+    <Box llx="383.26" lly="302.32" urx="404.23" ury="311.29">
+     <Text>14.56</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="415.51" lly="301.42" urx="431.89" ury="312.18">
+   <Para>
+    <Box llx="415.51" lly="302.32" urx="431.89" ury="311.29">
+     <Text>4.12</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="442.62" lly="301.42" urx="464.11" ury="312.18">
+   <Para>
+    <Box llx="442.62" lly="302.32" urx="463.59" ury="311.29">
+     <Text>10.94</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="474.87" lly="301.42" urx="491.23" ury="312.18">
+   <Para>
+    <Box llx="474.87" lly="302.32" urx="491.23" ury="311.29">
+     <Text>4.17</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="502.87" lly="301.42" urx="524.36" ury="312.18">
+   <Para>
+    <Box llx="502.87" lly="302.32" urx="519.24" ury="311.29">
+     <Text>8.83</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="535.12" lly="301.42" urx="551.49" ury="312.18">
+   <Para>
+    <Box llx="535.12" lly="302.32" urx="551.49" ury="311.29">
+     <Text>4.46</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="322.19" lly="290.96" urx="372.52" ury="301.72">
+   <Para>
+    <Box llx="327.28" lly="291.86" urx="372.52" ury="300.83">
+     <Text>Frustration</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="383.26" lly="290.96" urx="404.75" ury="301.72">
+   <Para>
+    <Box llx="383.26" lly="291.86" urx="404.23" ury="300.83">
+     <Text>13.89</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="415.51" lly="290.96" urx="431.89" ury="301.72">
+   <Para>
+    <Box llx="415.51" lly="291.86" urx="431.89" ury="300.83">
+     <Text>4.97</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="442.62" lly="290.96" urx="464.11" ury="301.72">
+   <Para>
+    <Box llx="442.62" lly="291.86" urx="458.99" ury="300.83">
+     <Text>7.72</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="474.87" lly="290.96" urx="491.23" ury="301.72">
+   <Para>
+    <Box llx="474.87" lly="291.86" urx="491.23" ury="300.83">
+     <Text>4.20</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="502.87" lly="290.96" urx="524.36" ury="301.72">
+   <Para>
+    <Box llx="502.87" lly="291.86" urx="519.24" ury="300.83">
+     <Text>6.78</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="535.12" lly="290.96" urx="551.49" ury="301.72">
+   <Para>
+    <Box llx="535.12" lly="291.86" urx="551.49" ury="300.83">
+     <Text>5.02</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+</Table>
+<Para>
+ <Box llx="316.81" lly="260.98" urx="555.94" ury="280.40">
+  <Text>Table 2: Mean and standard deviations of workload ratings
+(NASA TLX) for each cursor. Lower is better for all.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="74.69" urx="555.96" ury="240.57">
+  <Text>After each round of the experiment, participants filled out
+a NASA TLX survey [7]. Workload was assessed using six
+scales for mental demand, physical demand, temporal demand,
+performance, effort, and frustration. The means and
+standard deviation of each feature is shown in table 2. From
+this table we see that, in general, participants rated Bubble
+Lens better than the Bubble Cursor, and the Bubble Cursor
+better than the Point Cursor. Friedman’s tests for significance
+showed the following: mental demand (χ 2 (2) = 7.62,
+p = 0.022), physical demand (χ 2 (2) = 13.0, p = 0.002),
+temporal demand (χ 2 (2) = 3.39, p = 0.184), performance
+(χ 2 (2) = 15.13, p &lt; 0.001), effort (χ 2 (2) = 22.12, p &lt; .001),
+and frustration (χ 2 (2) = 21.88, p &lt; .001). A pairwise test
+of significance was done with Dunn’s test (Table 3). The
+Bubble Lens was rated significantly better than the Point
+Cursor in all aspects except temporal demand.</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="4" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Table llx="59.59" lly="655.36" urx="287.12" ury="741.64">
+ <Row>
+  <Cell colSpan="3" llx="127.99" lly="729.98" urx="163.29" ury="740.74">
+   <Para>
+    <Box llx="127.99" lly="730.88" urx="163.29" ury="739.85">
+     <Text>PC - BC</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell colSpan="2" llx="185.15" lly="729.98" urx="219.55" ury="740.74">
+   <Para>
+    <Box llx="185.15" lly="730.88" urx="219.55" ury="739.85">
+     <Text>PC - BL</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell colSpan="2" llx="243.27" lly="729.98" urx="277.92" ury="740.74">
+   <Para>
+    <Box llx="243.27" lly="730.88" urx="277.92" ury="739.85">
+     <Text>BC - BL</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="61.59" lly="719.52" urx="111.92" ury="730.28">
+  </Cell>
+  <Cell llx="122.66" lly="719.52" urx="139.04" ury="730.28">
+   <Para>
+    <Box llx="128.03" lly="720.42" urx="133.66" ury="729.38">
+     <Text>Z</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="149.78" lly="719.52" urx="168.63" ury="730.28">
+   <Para>
+    <Box llx="156.64" lly="720.42" urx="161.76" ury="729.38">
+     <Text>p</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="179.38" lly="719.52" urx="195.75" ury="730.28">
+   <Para>
+    <Box llx="184.74" lly="720.42" urx="190.37" ury="729.38">
+     <Text>Z</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="206.49" lly="719.52" urx="225.35" ury="730.28">
+   <Para>
+    <Box llx="213.35" lly="720.42" urx="218.47" ury="729.38">
+     <Text>p</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="236.09" lly="719.52" urx="255.53" ury="730.28">
+   <Para>
+    <Box llx="242.98" lly="720.42" urx="248.61" ury="729.38">
+     <Text>Z</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="266.27" lly="719.52" urx="285.12" ury="730.28">
+   <Para>
+    <Box llx="273.13" lly="720.42" urx="278.25" ury="729.38">
+     <Text>p</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="61.59" lly="708.56" urx="111.92" ury="719.32">
+   <Para>
+    <Box llx="83.78" lly="709.46" urx="111.91" ury="718.43">
+     <Text>Mental</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="122.66" lly="708.56" urx="139.04" ury="719.32">
+   <Para>
+    <Box llx="122.66" lly="709.46" urx="139.04" ury="718.43">
+     <Text>1.17</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="149.78" lly="708.56" urx="168.63" ury="719.32">
+   <Para>
+    <Box llx="149.79" lly="709.46" urx="166.15" ury="718.43">
+     <Text>.120</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="179.38" lly="708.56" urx="195.75" ury="719.32">
+   <Para>
+    <Box llx="179.38" lly="709.46" urx="195.75" ury="718.43">
+     <Text>2.86</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="206.49" lly="708.56" urx="225.35" ury="719.32">
+   <Para>
+    <Box llx="206.49" lly="709.46" urx="225.35" ury="718.43">
+     <Text>.002</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="236.09" lly="708.56" urx="255.53" ury="719.32">
+   <Para>
+    <Box llx="236.09" lly="709.46" urx="252.46" ury="718.43">
+     <Text>1.69</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="266.27" lly="708.56" urx="285.12" ury="719.32">
+   <Para>
+    <Box llx="266.27" lly="709.46" urx="285.12" ury="718.43">
+     <Text>.046</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="61.59" lly="698.10" urx="111.92" ury="708.86">
+   <Para>
+    <Box llx="78.49" lly="699.00" urx="111.90" ury="707.97">
+     <Text>Physical</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="122.66" lly="698.10" urx="139.04" ury="708.86">
+   <Para>
+    <Box llx="122.66" lly="699.00" urx="139.04" ury="707.97">
+     <Text>1.84</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="149.78" lly="698.10" urx="168.63" ury="708.86">
+   <Para>
+    <Box llx="149.78" lly="699.00" urx="168.63" ury="707.97">
+     <Text>.033</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="179.38" lly="698.10" urx="195.75" ury="708.86">
+   <Para>
+    <Box llx="179.38" lly="699.00" urx="195.75" ury="707.97">
+     <Text>2.83</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="206.49" lly="698.10" urx="225.35" ury="708.86">
+   <Para>
+    <Box llx="206.49" lly="699.00" urx="225.35" ury="707.97">
+     <Text>.002</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="236.09" lly="698.10" urx="255.53" ury="708.86">
+   <Para>
+    <Box llx="236.09" lly="699.00" urx="252.46" ury="707.97">
+     <Text>1.00</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="266.27" lly="698.10" urx="285.12" ury="708.86">
+   <Para>
+    <Box llx="266.28" lly="699.00" urx="282.64" ury="707.97">
+     <Text>.161</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="61.59" lly="687.64" urx="111.92" ury="698.40">
+   <Para>
+    <Box llx="73.52" lly="688.54" urx="111.91" ury="697.50">
+     <Text>Temporal</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="122.66" lly="687.64" urx="139.04" ury="698.40">
+   <Para>
+    <Box llx="122.66" lly="688.54" urx="139.04" ury="697.50">
+     <Text>0.78</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="149.78" lly="687.64" urx="168.63" ury="698.40">
+   <Para>
+    <Box llx="149.79" lly="688.54" urx="166.15" ury="697.50">
+     <Text>.219</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="179.38" lly="687.64" urx="195.75" ury="698.40">
+   <Para>
+    <Box llx="179.38" lly="688.54" urx="195.75" ury="697.50">
+     <Text>0.61</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="206.49" lly="687.64" urx="225.35" ury="698.40">
+   <Para>
+    <Box llx="206.50" lly="688.54" urx="222.86" ury="697.50">
+     <Text>.271</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="236.09" lly="687.64" urx="255.53" ury="698.40">
+   <Para>
+    <Box llx="236.09" lly="688.54" urx="255.53" ury="697.50">
+     <Text>-0.17</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="266.27" lly="687.64" urx="285.12" ury="698.40">
+   <Para>
+    <Box llx="266.28" lly="688.54" urx="282.65" ury="697.50">
+     <Text>.435</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="61.59" lly="677.18" urx="111.92" ury="687.94">
+   <Para>
+    <Box llx="61.59" lly="678.08" urx="111.90" ury="687.04">
+     <Text>Performance</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="122.66" lly="677.18" urx="139.04" ury="687.94">
+   <Para>
+    <Box llx="122.66" lly="678.08" urx="139.04" ury="687.04">
+     <Text>2.17</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="149.78" lly="677.18" urx="168.63" ury="687.94">
+   <Para>
+    <Box llx="149.78" lly="678.08" urx="168.63" ury="687.04">
+     <Text>.015</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="179.38" lly="677.18" urx="195.75" ury="687.94">
+   <Para>
+    <Box llx="179.38" lly="678.08" urx="195.75" ury="687.04">
+     <Text>3.01</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="206.49" lly="677.18" urx="225.35" ury="687.94">
+   <Para>
+    <Box llx="206.49" lly="678.08" urx="225.35" ury="687.04">
+     <Text>.001</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="236.09" lly="677.18" urx="255.53" ury="687.94">
+   <Para>
+    <Box llx="236.09" lly="678.08" urx="252.46" ury="687.04">
+     <Text>0.84</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="266.27" lly="677.18" urx="285.12" ury="687.94">
+   <Para>
+    <Box llx="266.28" lly="678.08" urx="282.64" ury="687.04">
+     <Text>.200</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="61.59" lly="666.72" urx="111.92" ury="677.48">
+   <Para>
+    <Box llx="88.48" lly="667.62" urx="111.91" ury="676.58">
+     <Text>Effort</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="122.66" lly="666.72" urx="139.04" ury="677.48">
+   <Para>
+    <Box llx="122.66" lly="667.62" urx="139.04" ury="676.58">
+     <Text>2.54</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="149.78" lly="666.72" urx="168.63" ury="677.48">
+   <Para>
+    <Box llx="149.78" lly="667.62" urx="168.63" ury="676.58">
+     <Text>.006</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="179.38" lly="666.72" urx="195.75" ury="677.48">
+   <Para>
+    <Box llx="179.38" lly="667.62" urx="195.75" ury="676.58">
+     <Text>3.81</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="206.49" lly="666.72" urx="225.35" ury="677.48">
+   <Para>
+    <Box llx="206.49" lly="667.62" urx="225.35" ury="676.58">
+     <Text>.000</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="236.09" lly="666.72" urx="255.53" ury="677.48">
+   <Para>
+    <Box llx="236.09" lly="667.62" urx="252.46" ury="676.58">
+     <Text>1.27</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="266.27" lly="666.72" urx="285.12" ury="677.48">
+   <Para>
+    <Box llx="266.28" lly="667.62" urx="282.64" ury="676.58">
+     <Text>.103</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+ <Row>
+  <Cell llx="61.59" lly="656.26" urx="111.92" ury="667.02">
+   <Para>
+    <Box llx="66.69" lly="657.16" urx="111.92" ury="666.12">
+     <Text>Frustration</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="122.66" lly="656.26" urx="139.04" ury="667.02">
+   <Para>
+    <Box llx="122.66" lly="657.16" urx="139.04" ury="666.12">
+     <Text>3.60</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="149.78" lly="656.26" urx="168.63" ury="667.02">
+   <Para>
+    <Box llx="149.78" lly="657.16" urx="168.63" ury="666.12">
+     <Text>.000</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="179.38" lly="656.26" urx="195.75" ury="667.02">
+   <Para>
+    <Box llx="179.38" lly="657.16" urx="195.75" ury="666.12">
+     <Text>3.91</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="206.49" lly="656.26" urx="225.35" ury="667.02">
+   <Para>
+    <Box llx="206.49" lly="657.16" urx="225.35" ury="666.12">
+     <Text>.000</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="236.09" lly="656.26" urx="255.53" ury="667.02">
+   <Para>
+    <Box llx="236.09" lly="657.16" urx="252.46" ury="666.12">
+     <Text>0.35</Text>
+    </Box>
+   </Para>
+  </Cell>
+  <Cell llx="266.27" lly="656.26" urx="285.12" ury="667.02">
+   <Para>
+    <Box llx="266.28" lly="657.16" urx="282.64" ury="666.12">
+     <Text>.363</Text>
+    </Box>
+   </Para>
+  </Cell>
+ </Row>
+</Table>
+<Para>
+ <Box llx="53.80" lly="605.35" urx="292.92" ury="645.70">
+  <Text>Table 3: Pairwise significance testing with Dunn’s test for
+all possible pairs of Point Cursor (PC), Bubble Cursor (BC)
+and Bubble Lens (BL). Z-statistic and p-values are shown,
+significance at (p &lt; .05) is bolded</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="573.32" urx="147.79" ury="585.28">
+  <Text>4. DISCUSSION</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="466.22" urx="292.95" ury="569.34">
+  <Text>The results of our study showed that enhancing gestural
+interaction with augmented cursors improves performance,
+specifically the movement time used to select a target and</Text>
+  <Text>the error rate. This is similar to previous research in mouse
+interaction[9]. The results also indicated that the Bubble
+Lens cursor improved performance more than the Bubble
+Cursor, as demonstrated with a high effect size. The magnification
+provided by the Bubble Lens may be a key factor
+in improving gestural interaction, which tends to be less accurate
+than mouse interaction, especially for small targets.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="372.07" urx="292.94" ury="464.73">
+  <Text>Subjective feedback from our participants showed that the
+augmented cursors did lead to better ratings for gestures,
+with nearly all workload measures significantly improved.
+Effort and frustration especially showed large differences between
+the Point Cursor and the two augmented cursors. The
+workload ratings show that augmented cursors can improve
+not only performance for gestural interaction, but also the
+users’ experience, which may aid in making gestures a more
+practical form of daily computer interaction.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="346.17" urx="155.75" ury="358.13">
+  <Text>5. CONCLUSION</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="270.46" urx="292.96" ury="342.19">
+  <Text>In this paper, our goal was to assess the performance and
+usability of gestural interaction that has been enhanced with</Text>
+  <Text>augmented cursors. We compared the standard Point Cursor,
+Bubble Cursor, and Bubble Lens cursor. We found
+that the augmented cursors significantly improved both the
+movement time and error rate of gestural interaction, with
+the Bubble Lens cursor showing the best performance.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="244.55" urx="165.93" ury="256.51">
+  <Text>6. FUTURE WORK</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="53.80" lly="74.69" urx="292.98" ury="240.57">
+  <Text>This work has shown the effectiveness of augmented cursors
+in gestural interaction with small targets, but at what
+size does the augmented cursor stop being beneficial, if ever?
+By increasing the size of the targets over the course of experimentation,
+additional application and conclusion can be
+made about the potential of this interaction. Additionally
+the approach works with any device which can sense orientation
+(3+ DOF), potentially allowing for direct external
+display control using a smartphone or smartwatch. Future
+experiments might further investigate the power of magnification
+in improving gestural interaction. Some individuals,
+especially those with motor impairments, poor vision, or</Text>
+  <Text>lower hand-eye coordination, may benefit from higher levels
+of magnification. The ability to automatically detect and
+adjust the magnification level may be helpful in such cases.
+Finally, our experiments were conducted in a desktop setting,</Text>
+ </Box>
+ <Box llx="316.81" lly="707.32" urx="555.96" ury="737.21">
+  <Text>but it would make sense to perform a similar form
+of experiment in AR/VR setting where gestures are more
+prevalent.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="684.25" urx="418.11" ury="696.20">
+  <Text>7. REFERENCES</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="321.41" lly="588.51" urx="555.96" ury="682.16">
+  <Text>[1] G. Bailly, J. Müller, M. Rohs, D. Wigdor, and
+S. Kratz. Shoesense: a new perspective on gestural
+interaction and wearable applications. In Proceedings
+of the SIGCHI Conference on Human Factors in
+Computing Systems, pages 1239–1248. ACM, 2012.
+[2] O. Chapuis, J.-B. Labrune, and E. Pietriga. Dynaspot:
+speed-dependent area cursor. In Proceedings of the
+SIGCHI Conference on Human Factors in Computing
+Systems, pages 1391–1400. ACM, 2009.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="321.41" lly="535.21" urx="550.19" ury="586.02">
+  <Text>[3] B. Ens, J. D. Hincapié-Ramos, and P. Irani. Ethereal
+planes: a design framework for 2d information space
+in 3d mixed reality environments. In Proceedings of
+the 2nd ACM symposium on Spatial user interaction,
+pages 2–12. ACM, 2014.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="321.41" lly="481.91" urx="555.96" ury="532.72">
+  <Text>[4] T. Grossman and R. Balakrishnan. The bubble cursor:
+enhancing target acquisition by dynamic resizing of
+the cursor’s activation area. In Proceedings of the
+SIGCHI conference on Human factors in computing
+systems, pages 281–290. ACM, 2005.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="321.41" lly="439.07" urx="540.28" ury="479.42">
+  <Text>[5] D. Guinness, A. Jude, G. M. Poor, and A. Dover.
+Models for rested touchless gestural interaction. In
+Proceedings of the 3rd ACM Symposium on Spatial
+User Interaction, pages 34–43. ACM, 2015.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="321.41" lly="385.77" urx="540.86" ury="436.58">
+  <Text>[6] D. Guinness, A. Seung, A. Dover, G. M. Poor, and
+A. Jude. Modeling mid-air gestures with spherical
+coordinates. In Proceedings of the 3rd ACM
+Symposium on Spatial User Interaction, pages
+133–133. ACM, 2015.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="321.41" lly="322.01" urx="555.93" ury="383.28">
+  <Text>[7] S. G. Hart and L. E. Staveland. Development of
+nasa-tlx (task load index): Results of empirical and
+theoretical research. In P. A. Hancock and
+N. Meshkati, editors, Human Mental Workload,
+volume 52 of Advances in Psychology, pages 139 – 183.
+North-Holland, 1988.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="321.41" lly="279.17" urx="553.58" ury="319.52">
+  <Text>[8] R. Kopper, F. Bacim, and D. A. Bowman. Rapid and
+accurate 3d selection by progressive refinement. In 3D
+User Interfaces (3DUI), 2011 IEEE Symposium on,
+pages 67–74. IEEE, 2011.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="321.41" lly="225.87" urx="552.83" ury="276.68">
+  <Text>[9] M. E. Mott and J. O. Wobbrock. Beating the bubble:
+using kinematic triggering in the bubble lens for
+acquiring small, dense targets. In Proceedings of the
+SIGCHI Conference on Human Factors in Computing
+Systems, pages 733–742. ACM, 2014.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="172.57" urx="553.10" ury="223.38">
+  <Text>[10] D. Vogel and R. Balakrishnan. Distant freehand
+pointing and clicking on very large, high resolution
+displays. In Proceedings of the 18th annual ACM
+symposium on User interface software and technology,
+pages 33–42. ACM, 2005.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="316.81" lly="76.43" urx="552.03" ury="170.08">
+  <Text>[11] J. P. Wachs, M. Kölsch, H. Stern, and Y. Edan.
+Vision-based hand-gesture applications.
+Communications of the ACM, 54(2):60–71, 2011.
+[12] J. O. Wobbrock, J. Fogarty, S.-Y. S. Liu, S. Kimuro,
+and S. Harada. The angle mouse: target-agnostic
+dynamic gain adjustment based on angular deviation.
+In Proceedings of the SIGCHI Conference on Human
+Factors in Computing Systems, pages 1401–1410.
+ACM, 2009.</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Resources>
+<Fonts>
+ <Font id="F0" name="NimbusSanL-Bold" fullname="ZEMZQP+NimbusSanL-Bold" type="Type 1" embedded="true" ascender="722.00" capheight="722.00" italicangle="0.00" descender="-217.00" weight="600.00" xheight="532.00"/>
+ <Font id="F1" name="NimbusSanL-Regu" fullname="YOUPPN+NimbusSanL-Regu" type="Type 1" embedded="true" ascender="712.00" capheight="712.00" italicangle="0.00" descender="-213.00" weight="400.00" xheight="523.00"/>
+ <Font id="F2" name="NimbusRomNo9L-Medi" fullname="RBQWAM+NimbusRomNo9L-Medi" type="Type 1" embedded="true" ascender="690.00" capheight="690.00" italicangle="0.00" descender="-209.00" weight="600.00" xheight="461.00"/>
+ <Font id="F3" name="CMR9" fullname="KYEKSM+CMR9" type="Type 1" embedded="true" ascender="694.00" capheight="683.00" italicangle="0.00" descender="-194.00" weight="300.00" xheight="431.00"/>
+ <Font id="F4" name="NimbusRomNo9L-Regu" fullname="BAGMVL+NimbusRomNo9L-Regu" type="Type 1" embedded="true" ascender="678.00" capheight="651.00" italicangle="0.00" descender="-216.00" weight="400.00" xheight="450.00"/>
+ <Font id="F5" name="NimbusRomNo9L-ReguItal" fullname="GDCSUR+NimbusRomNo9L-ReguItal" type="Type 1" embedded="true" ascender="668.00" capheight="668.00" italicangle="-15.00" descender="-193.00" weight="300.00" xheight="441.00"/>
+ <Font id="F6" name="CMSY7" fullname="FJTKHV+CMSY7" type="Type 1" embedded="true" ascender="750.00" capheight="683.00" italicangle="-14.00" descender="-194.00" weight="0.00" xheight="431.00"/>
+ <Font id="F7" name="CMR8" fullname="NTNCVS+CMR8" type="Type 1" embedded="true" ascender="694.00" capheight="683.00" italicangle="0.00" descender="-194.00" weight="300.00" xheight="431.00"/>
+ <Font id="F8" name="CMSY9" fullname="OPEKTB+CMSY9" type="Type 1" embedded="true" ascender="750.00" capheight="683.00" italicangle="-14.00" descender="-194.00" weight="0.00" xheight="431.00"/>
+ <Font id="F9" name="CMTI9" fullname="OBUIKT+CMTI9" type="Type 1" embedded="true" ascender="694.00" capheight="683.00" italicangle="-14.00" descender="-194.00" weight="300.00" xheight="431.00"/>
+ <Font id="F10" name="CMMI9" fullname="KSYSCG+CMMI9" type="Type 1" embedded="true" ascender="694.00" capheight="683.00" italicangle="-14.00" descender="-194.00" weight="300.00" xheight="431.00"/>
+ <Font id="F11" name="CMR6" fullname="PJZRLC+CMR6" type="Type 1" embedded="true" ascender="694.00" capheight="683.00" italicangle="0.00" descender="-194.00" weight="400.00" xheight="431.00"/>
+ <Font id="F12" name="CMMI6" fullname="NTGWPS+CMMI6" type="Type 1" embedded="true" ascender="694.00" capheight="683.00" italicangle="-14.00" descender="-194.00" weight="400.00" xheight="431.00"/>
+ <Font id="F13" name="CMBX9" fullname="IPISIU+CMBX9" type="Type 1" embedded="true" ascender="694.00" capheight="686.00" italicangle="0.00" descender="-194.00" weight="500.00" xheight="444.00"/>
+</Fonts>
+<Images>
+ <Image id="I0" filename="Aug_Cursors_I0.tif" extractedAs=".tif" width="931" height="930" colorspace="CS1" bitsPerComponent="8"/>
+ <Image id="I1" filename="Aug_Cursors_I1.tif" extractedAs=".tif" width="931" height="930" colorspace="CS1" bitsPerComponent="8"/>
+ <Image id="I2" filename="Aug_Cursors_I2.tif" extractedAs=".tif" width="931" height="930" colorspace="CS1" bitsPerComponent="8"/>
+</Images>
+<ColorSpaces>
+ <ColorSpace id="CS0" name="DeviceGray" components="1"/>
+ <ColorSpace id="CS1" name="DeviceRGB" components="3"/>
+</ColorSpaces>
+</Resources>
+<Graphics>
+<Colors>
+ <Color id="C0" colorspace="CS0" svgname="black">
+  <Value>0.00</Value>
+ </Color>
+</Colors>
+</Graphics>
+</Pages>
+</Document>
+</TET>

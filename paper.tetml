@@ -1,0 +1,1921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by the PDFlib Text and Image Extraction Toolkit TET (www.pdflib.com) -->
+<TET xmlns="http://www.pdflib.com/XML/TET5/TET-5.0"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.pdflib.com/XML/TET5/TET-5.0
+ http://www.pdflib.com/XML/TET5/TET-5.0.xsd"
+ version="5.0">
+<Creation platform="Linux-x86_64" tetVersion="5.0" date="2016-12-03T00:58:35-07:00" />
+<Document filename="paper.pdf" pageCount="10" filesize="537916" linearized="false" pdfVersion="1.4">
+<DocInfo>
+<Producer>Prince 11 (www.princexml.com)</Producer>
+<Title>AACrobat: Using Mobile Devices to Lower Communication Barriers and Provide Autonomy with Gaze-Based AAC</Title>
+</DocInfo>
+<Options> tetml={filename={paper.tetml}}</Options>
+<Bookmarks>
+<Bookmark destination="D0">
+ <Title>AACrobat: Using Mobile Devices to Lower Communication Barriers and Provide Autonomy with Gaze-Based AAC</Title>
+</Bookmark>
+<Bookmark open="true" destination="D1">
+ <Title>Abstract</Title>
+ <Bookmark destination="D2">
+  <Title>Categories and Subject Descriptors</Title>
+ </Bookmark>
+ <Bookmark destination="D3">
+  <Title>Keywords</Title>
+ </Bookmark>
+</Bookmark>
+<Bookmark destination="D4">
+ <Title>Introduction</Title>
+</Bookmark>
+<Bookmark destination="D5">
+ <Title>Related Work</Title>
+</Bookmark>
+<Bookmark open="true" destination="D6">
+ <Title>Formative Study</Title>
+ <Bookmark destination="D7">
+  <Title>Method</Title>
+ </Bookmark>
+ <Bookmark open="true" destination="D8">
+  <Title>Findings</Title>
+  <Bookmark destination="D9">
+   <Title>Partners&apos; Roles</Title>
+  </Bookmark>
+  <Bookmark destination="D10">
+   <Title>Autonomy</Title>
+  </Bookmark>
+ </Bookmark>
+ <Bookmark destination="D11">
+  <Title>Discussion of Formative Study Findings</Title>
+ </Bookmark>
+</Bookmark>
+<Bookmark open="true" destination="D12">
+ <Title>AACrobat</Title>
+ <Bookmark open="true" destination="D13">
+  <Title>Features</Title>
+  <Bookmark open="true" destination="D14">
+   <Title>Engagement of Communication Partners</Title>
+   <Bookmark destination="D15">
+    <Title>Real-Time View of Synchronous Messages</Title>
+   </Bookmark>
+   <Bookmark destination="D16">
+    <Title>Asynchronous Messages</Title>
+   </Bookmark>
+  </Bookmark>
+  <Bookmark open="true" destination="D17">
+   <Title>Autonomy</Title>
+   <Bookmark destination="D18">
+    <Title>Autonomy-Preserving Co-Construction</Title>
+   </Bookmark>
+   <Bookmark destination="D19">
+    <Title>Status Indicators</Title>
+   </Bookmark>
+  </Bookmark>
+  <Bookmark open="true" destination="D20">
+   <Title>Privacy and Control</Title>
+   <Bookmark destination="D21">
+    <Title>Mobile Audio</Title>
+   </Bookmark>
+   <Bookmark destination="D22">
+    <Title>Levels of Sharing</Title>
+   </Bookmark>
+  </Bookmark>
+ </Bookmark>
+</Bookmark>
+<Bookmark open="true" destination="D23">
+ <Title>User Feedback</Title>
+ <Bookmark destination="D24">
+  <Title>Case Study One</Title>
+ </Bookmark>
+ <Bookmark destination="D25">
+  <Title>Case Study Two</Title>
+ </Bookmark>
+ <Bookmark destination="D26">
+  <Title>Case Study Three</Title>
+ </Bookmark>
+ <Bookmark destination="D27">
+  <Title>Discussion of Case Study Findings</Title>
+ </Bookmark>
+</Bookmark>
+<Bookmark destination="D28">
+ <Title>Future Work</Title>
+</Bookmark>
+<Bookmark destination="D29">
+ <Title>Conclusion</Title>
+</Bookmark>
+<Bookmark destination="D30">
+ <Title>Acknowledgements</Title>
+</Bookmark>
+<Bookmark destination="D31">
+ <Title>Fake References</Title>
+</Bookmark>
+</Bookmarks>
+<Pages>
+<Page number="1" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Annotations>
+<Annotation id="ANN0" type="Text" icon="Note" subject="Prince - Non-commercial License">
+ <Box llx="572.00" lly="752.00" urx="597.00" ury="777.00"/>
+ <Title>www.princexml.com</Title>
+ <Contents>This document was created with Prince, a great way of getting web content onto paper.</Contents>
+ <Annotation id="ANN1" type="Popup">
+  <Box llx="282.00" lly="572.00" urx="532.00" ury="692.00"/>
+ </Annotation>
+</Annotation>
+</Annotations>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Para>
+ <Box llx="55.48" lly="700.74" urx="556.06" ury="740.34">
+  <Text>AACrobat: Using Mobile Devices to Lower Communication
+Barriers and Provide Autonomy with Gaze-Based AAC</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="58.07" lly="660.31" ulx="58.07" uly="689.23" urx="557.57" ury="689.85" lrx="557.57" lry="655.69">
+  <Text>Alexander Fiannaca 1,2 Ann Paradiso 1 Mira Shah 1 Meredith Ringel Morris 1</Text>
+  <Text>1 Microsoft Research</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="75.54" lly="629.29" urx="284.36" ury="653.03">
+  <Text>Redmond, USA
+{annpar,mshah,merrie}@microsoft.com</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="363.41" lly="660.31" ulx="363.41" uly="668.31" urx="500.50" ury="668.31" lrx="500.50" lry="655.69">
+  <Text>2 University of Washington</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="376.21" lly="629.29" urx="487.74" ury="653.03">
+  <Text>Seattle, USA
+fiannaca@cs.uw.edu</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="578.08" urx="119.30" ury="590.08">
+  <Text>ABSTRACT</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="366.55" urx="294.12" ury="575.62">
+  <Text>Gaze-based alternative and augmentative communication (AAC)
+devices provide users with neuromuscular diseases the ability to
+communicate with other people through only the movement of
+their eyes. These devices suffer from slow input, causing a host of
+communication breakdowns to occur during face-to-face conversations.
+These breakdowns lead to decreased user autonomy, conversation
+quality, and communication partner engagement. Attempts
+to improve communication through these devices has mainly focused
+on throughput and rate enhancement, though this has only
+attained meager results to date. In this work, we address this issue
+from the top down by considering AAC devices as a form of groupware
+and designing interactions around this groupware that facilitate
+better conversations for all involved communicators. We first
+present qualitative findings on issues with gaze-based AAC and
+end-user communication preferences; we identify several design
+guidelines for improving these systems and then present AACrobat,
+a system that embodies these guidelines and introduces novel
+interactions by extending gaze-based AAC devices with a mobile
+companion app. Finally, we present early feedback on AACrobat
+through three case studies of users with ALS.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="337.08" urx="234.84" ury="349.08">
+  <Text>Categories and Subject Descriptors</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="304.56" urx="294.11" ury="334.62">
+  <Text>K.4.2 Social Issues: Assistive Technologies for Persons with Disabilities;
+H.5.3 Group and Organization Interfaces: Collaborative
+Computing</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="275.09" urx="105.96" ury="287.09">
+  <Text>Keywords</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="263.63" urx="257.75" ury="272.63">
+  <Text>Gaze-Based AAC; Amyotrophic Lateral Sclerosis; ALS.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="234.16" urx="164.95" ury="246.16">
+  <Text>1. INTRODUCTION</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="191.11" urx="294.11" ury="231.70">
+  <Text>Amyotrophic Lateral Sclerosis (ALS) is a neuromuscular disease
+characterized by the degeneration and death of motor neurons
+(those that control the movement of muscles), ultimately leading to
+complete paralysis and death [25]. The progression of ALS leads</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="74.10" urx="293.97" ury="149.30">
+  <Text>Permission to make digital or hard copies of all or part of this work for personal
+or classroom use is granted without fee provided that copies are not
+made or distributed for profit or commercial advantage and that copies bear
+this notice and the full citation on the first page. To copy otherwise, or republish,
+to post on servers or to redistribute to lists, requires prior specific
+permission and/or a fee.
+Conference’10, Month 1–2, 2010, City, State, Country.
+Copyright 2010 ACM 1-58113-000-0/00/0010 …$15.00.</Text>
+ </Box>
+ <Box llx="317.88" lly="254.59" urx="558.00" ury="590.02">
+  <Text>to the loss of both mobility and the ability to speak, though patients
+often retain control of the muscles that are responsible for
+movement of the eyes [2]. Unsurprisingly, therefore, use of gazebased
+alternative and augmentative communication technologies is
+critical for improving or maintaining the quality of life of people
+living with ALS [2]. These symptoms necessitate the use of alternative
+and augmentative communication (AAC) technologies designed
+around eye gaze input to allow people with ALS to communicate.
+These AAC technologies range from low-tech to hightech,
+and AAC users often use a set of different devices from this
+spectrum depending on the needs and constraints of the moment
+[22]. Low-tech solutions typically involve communication boards,
+which are clear plastic boards with letters or symbols on them that
+are held by a communication partner; the ALS patient gazes at the
+relevant symbol on the board, and their gaze is manually interpreted
+by the partner (e.g., e-tran boards [24], Vocal Eyes [3]). Hightech
+solutions for gaze-based communication involve the use of
+eye trackers to control computer interfaces (e.g., Tobii Dynavox
+[31], PRC Accent [7]). With these high-tech devices, users typically
+use gaze control to type a message, and then gaze-activate
+a button to play that message out loud via the device’s speakers,
+using text-to-speech rendering technology. Use of these devices is
+reliant upon a number of environmental and personal factors including
+the amount of ambient sunlight (which causes infrared interference),
+the user’s use of glasses, and medications that affect
+pupil dilation. Unfortunately, even when users are able to effectively
+use these high-tech gaze-based AAC devices communication is
+extremely slow (about 10 words per minute) [23]. The stark asymmetry
+in communication rates between the AAC device user and
+their naturally speaking communication partners limits the type of
+communication users can have through these devices and causes
+significant communication breakdowns.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="197.44" urx="557.99" ury="248.56">
+  <Text>In this paper, we present AACrobat, a system consisting of extensions
+to an eye-gaze keyboard and a mobile companion application
+that are designed to alleviate many of the issues that arise due to
+the inherently slow rate of communication with gaze-based AAC
+devices. This paper presents several research contributions:</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="318.13" lly="122.70" urx="557.99" ury="185.70">
+  <Text>1. Reframing the research perspective surrounding AAC communication
+to expand the focus beyond low-level technical
+issues (e.g., gaze sensing, rate enhancement), instead taking
+a perspective of AAC devices as a form of groupware and
+considering designing systems with roles to facilitate better
+feedthrough between participants.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="318.13" lly="79.50" urx="557.99" ury="120.90">
+  <Text>2. Qualitative results providing insights into the often conflicting
+desires of AAC device users and their communication partners
+when it comes to how the two mediate communication through
+the AAC device.</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="2" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Para>
+ <Box llx="54.25" lly="697.16" urx="294.11" ury="738.56">
+  <Text>3. The AACrobat system, a set of AAC device extensions and a
+mobile app that introduce novel interactions designed to address
+communication challenges for gaze-based AAC device
+users and their communication partners.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.25" lly="675.56" urx="294.11" ury="695.36">
+  <Text>4. The gathering of preliminary feedback about AACrobat from
+users with ALS and their communication partners.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="645.95" urx="168.41" ury="657.95">
+  <Text>2. RELATED WORK</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="550.26" urx="294.12" ury="643.50">
+  <Text>The use of AAC devices is critical in the care of people with ALS
+[4]. The only AAC devices applicable to people with ALS are
+those with input modalities requiring the fewest voluntary muscle
+movements [4]. Hill et al. [14] indicated that the fact that gaze input
+is usable throughout the duration of the progression of the disease
+has the potential to significantly improve patients’ quality of
+life [6]. It has also been shown that the use of eye tracking communication
+devices decreases the burden caregivers feel in caring for
+people with ALS [15].</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="408.87" urx="294.12" ury="544.23">
+  <Text>Unfortunately, the process of gaze tracking is difficult and highly
+error prone, thus far leading to AAC systems that are very slow
+in comparison to the rate at which human speech normally occurs.
+Yorkston et al. [36] found that the average rate of speech of adults
+without disabilities was 190 words per minute (wpm). High-tech
+gaze-based AAC devices produce communication more than an order
+of magnitude slower than this [13]. On eye typing systems with
+dwell-based clicking (focusing on a target for a fixed period of
+time generates a click), able-bodied users can reach up to 20 wpm
+with an appropriately adjusted dwell time [22]. Dwell-based systems
+suffer an inherent cap on throughput due to the fact that users
+must fixate upon targets for some non-zero threshold of time in order
+to activate or click them.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="77.94" urx="294.12" ury="402.84">
+  <Text>It has been suggested that dwell-free eye typing systems that use
+“gaze gestures” analogous to swipe-style keyboards [19] could be
+developed with the theoretical potential to reach throughputs of
+up to 46 wpm (based on observations of a simulation with a perfect
+dwell-free gaze recognizer) [18]. To the contrary of these simulated
+results, the most recent dwell-free systems achieve much
+lower throughput rates in practice: the Filteryedping system had
+a throughput of 7.6 wpm for users with ALS or Duchenne Muscular
+Dystrophy [29], and the EyeSwipe system had a throughput
+of 11.7 wpm for able-bodied users [20]. The Tobii Dynavox Communicator
+5 [37], a commercial dwell-free system claiming up to
+a 100% increase in throughput on a per user basis, became available
+in the summer of 2015, but independent metrics reporting
+end-user throughput with this system are not yet available due
+to its novelty. Other non-keyboard-based AAC systems such as
+Dasher [33,34] and EyeWrite [35] have attempted to address the
+throughput issue, but none have succeeded in breaking past the
+current cap of approximately 20 wpm for users with motor impairments.
+Additionally, rate enhancement techniques such as word
+prediction [10,13,32], context-awareness [17], and co-construction
+[28,30] have attempted to address this problem, but have only resulted
+in minor throughput improvements. As an example, Paepke
+et. al. created a rate enhancement system that displays an AAC
+user’s current text and a tree of word predictions to communication
+partners on a computer screen, allowing partners to guess out loud
+at what the AAC user is trying to say [28]. In a similar project,
+Roark verified that communication partners could effectively enhance
+communication rate by guessing to complete words being
+typed on a computer screen [30]. Unfortunately, neither of these
+studies evaluated their systems with AAC users or studied the impact
+of this “guessing out loud” interaction on conversation dynamics</Text>
+ </Box>
+ <Box llx="317.88" lly="729.70" urx="419.77" ury="738.70">
+  <Text>or patient autonomy.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="493.54" urx="558.00" ury="723.67">
+  <Text>The research community of AAC technologists has dedicated a significant
+amount of work towards enhancing the throughput rate of
+gaze-based AAC devices; this is an important challenge, though
+even doubling or tripling of gaze-based AAC throughput would
+still result in communication rates far below those of conversational
+speech. Thus, while improving throughput is important, it is also
+important to consider how to address the myriad other communication
+problems that result from low throughput rates. For instance,
+it takes a long time for users to construct contributions to group
+conversations due to the throughput problem, resulting in AAC device
+users contributing their thoughts after the topic of the conversation
+has already shifted. These out-of-context contributions
+cause conversations to break down, making it difficult for AAC device
+users to participate in group conversations, which contributes
+to their isolation [9,27]. Furthermore, this inability to rapidly produce
+utterances through AAC devices leads to a loss of conversational
+control for AAC device users [26] (i.e., it is difficult for
+AAC users to direct conversations). Fulcher [9] showed that using
+shared screens for AAC devices can help to improve communication;
+however, this presents potential privacy issues in that communication
+partners see the entirety of the information present in the
+AAC device interface.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="120.49" urx="557.99" ury="487.51">
+  <Text>A majority of prior work in improving communication through
+gaze-based AAC has focused on addressing communication issues
+in a bottom-up manner via throughput and rate enhancement, rather
+than designing the system to facilitate effective communication
+given the low throughput inherent in the devices. With the exception
+of the study of co-construction [28,30], previous work in this
+field has viewed the design of gaze-based AAC systems without
+regard to the role of communication partners in facilitating effective
+communication. As described by Fulcher [9], this bottom-up
+approach is one-sided, in that it puts the burden of facilitating effective
+communication solely on the AAC device user without considering
+the social aspect inherent in interpersonal communication.
+Acknowledging a similar issue for aphasia patients, Kagan presented
+the supported communication intervention for people with aphasia
+and their communication partners [16]. Supported conversation
+focuses on creating a feeling of autonomy for the person with aphasia
+while specifically teaching communication dyads to share the
+communication load rather than simply training the person with
+aphasia to develop independent communication skills. In practice,
+supported conversation involves conceptual training in which communication
+partners are taught both what it may be like to personally
+experience aphasia and the impact it can have for them to
+learn skills for supporting their aphasic communication partners,
+followed by hands-on instruction and practice of communication
+skills with people with aphasia. In this research, we take inspiration
+from both the motivation behind supported conversation and
+from the concept of groupware [1], thinking of AAC software as a
+shared workspace through which effective communication should
+be enabled by sharing the communication burden among all interlocutors.
+This perspective inspired our work to explore methods
+of facilitating better communication by looking specifically at
+how communication partners currently interact with AAC users
+and their software and how these interactions could be augmented
+via explicit feedthrough mechanisms [1] to improve communication.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="91.01" urx="450.28" ury="103.01">
+  <Text>3. FORMATIVE STUDY</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="79.56" urx="557.99" ury="88.56">
+  <Text>To better understand the issues faced by both gaze-based AAC</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="3" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Para>
+ <Box llx="54.00" lly="692.96" urx="294.11" ury="723.56">
+  <Text>Table 1. Responses to the question, &quot;How do you try to help the
+AAC device/software user?&quot; for the communication partners
+who indicated they have attempted to help AAC users.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="133.17" lly="674.79" urx="214.90" ury="683.79">
+  <Text>Individual Responses</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="63.15" lly="646.82" urx="284.82" ury="666.62">
+  <Text>“Read over shoulder, sometimes hit delete word or backspace
+for him”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="68.10" lly="618.85" urx="279.82" ury="638.65">
+  <Text>“Guess the end of a sentence before it has been completely
+typed and spoken”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="61.00" lly="601.68" urx="287.02" ury="610.68">
+  <Text>“Looking at typed message. Trying to finish sentence/thought”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="64.65" lly="573.71" urx="283.29" ury="593.51">
+  <Text>“Sometimes he just needs a few words and I know him well
+enough that I get what he&apos;s saying it save [sic] us both time.”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="70.40" lly="539.37" urx="277.65" ury="565.54">
+  <Text>“Making questions easier to answer, being very specific.”</Text>
+  <Text>“I give them my advice based off my own experience”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="474.22" urx="294.11" ury="525.34">
+  <Text>users and their communication partners during communication, we
+conducted a formative study to obtain qualitative feedback from
+the target user groups. We designed this formative study to explore
+communication issues as they relate to the interaction between
+AAC users and various types of communication partners.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="444.74" urx="114.97" ury="456.74">
+  <Text>3.1 Method</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="338.52" urx="294.11" ury="442.29">
+  <Text>We created two online questionnaires to gather qualitative data:
+one for gaze-based AAC users, and one for their communication
+partners . We chose an online questionnaire as the data-gathering
+method because it was suited to the unique constraints of working
+with ALS patients – the format allowed respondents to answer
+questions at their own pace, take rest breaks, and avoid the need
+to travel. Participants were recruited through an email list for an
+ALS organization in our local metropolitan area consisting of people
+with ALS and family members and caregivers of people with
+ALS.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="249.78" urx="294.12" ury="332.49">
+  <Text>The AAC User questionnaire contained 33 questions and took respondents
+twenty-seven minutes on average to complete. Inclusion
+criteria were that users must both be diagnosed with a degenerative
+neuromuscular disease and must own a gaze-based AAC device.
+Eight people (six male) completed the AAC User questionnaire;
+respondents’ ages ranged from 44 to 57 years (mean 51.5).
+All respondents had been diagnosed with ALS in the last ten years
+and completed the questions without the assistance of a caregiver.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="150.51" urx="294.11" ury="243.75">
+  <Text>The Communication Partner questionnaire contained 29 questions
+and took respondents thirteen minutes on average to complete. The
+only inclusion criterion was that participants must know and communicate
+with someone who has a degenerative neuromuscular
+disease and uses a gaze-based AAC device. Nine people total (all
+female) completed the Communication Partner questionnaire; respondents’
+ages ranged from 42 to 68 years (mean 54.8). All respondents
+self-identified as spouses, family members, caregivers,
+and/or friends of people with ALS.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="82.83" urx="294.12" ury="144.48">
+  <Text>Note that this relatively small sample size is not surprising given
+(1) the low incidence rate of ALS, which affects only 2 people per
+100,000 [25]; (2) the technical difficulty for ALS patients dependent
+on gaze-based AAC in answering questions autonomously;
+and (3) the additional demands on ALS patients’ time, with respect
+to issues such as extreme fatigue and the desire to save energy for</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="671.36" urx="558.00" ury="723.56">
+  <Text>Table 2. Responses from AAC users indicating their level of
+comfort with communication partners attempting to help them
+communicate (N = neutral, SU = somewhat uncomfortable, VU
+= very uncomfortable). Note that the remaining two options,
+comfortable and very comfortable, were never chosen.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="404.69" lly="653.19" urx="471.15" ury="662.19">
+  <Text>Response/Reason</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="321.59" lly="603.62" urx="554.14" ury="645.02">
+  <Text>(SU) “It erodes one’s confidence over time. It prevents nuanced
+conversation by cutting it short when person reading or guessing
+thinks they know the nature of the full communication from a
+few words.”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="325.09" lly="564.85" urx="550.55" ury="595.45">
+  <Text>(N) “It doesn&apos;t bother me there trying to help and most of the
+time it turns into a game. There are times it does start to get on
+my nerves.”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="323.05" lly="536.88" urx="552.62" ury="556.68">
+  <Text>(VU) “It&apos;s not socially acceptable. Makes me more aware of my
+losses in capabilities from this disease…”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="322.59" lly="465.71" urx="553.14" ury="528.71">
+  <Text>(N) “It depends on the situation. If I am asking for something or
+simply conveying information, I am very comfortable with
+someone anticipating my comments but if I am in a conversation
+with someone or a group of people, I am very uncomfortable
+with someone speaking for me and/or reading over my
+shoulder.”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="331.73" lly="437.74" urx="543.97" ury="457.54">
+  <Text>(SU) “Because I’ve always been a detailed, long story type
+guy.”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="385.97" lly="420.57" urx="489.83" ury="429.57">
+  <Text>(SU) “I need independence.”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="344.89" urx="558.00" ury="406.54">
+  <Text>high-priority interactions given their extremely shortened lifespan.
+As with many studies and methods, readers should be aware that
+there may be self-selection biases; for example, it may be the case
+that respondents with the skill or motivation to complete an online
+questionnaire may have different perspectives and experiences
+than those who did not participate.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="315.41" urx="383.53" ury="327.41">
+  <Text>3.2 Findings</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="287.28" urx="413.35" ury="298.28">
+  <Text>3.2.1 Partners&apos; Roles</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="170.79" urx="557.99" ury="285.09">
+  <Text>Of the nine respondents who completed the entire Communication
+Partner questionnaire, six indicated that they had attempted to help
+gaze-based AAC users to communicate or communicate faster in
+the past. Of these six, five indicated that this was related to communication
+problems the AAC user experienced, including the AAC
+user getting left behind in conversations that move faster than they
+are able to generate speech (five respondents), the AAC device
+having a technical issue rendering it temporarily unusable (four respondents),
+the AAC device generating nonsensical output (two respondents),
+and message generation taking so long that they were
+unsure if the device was broken or not (two respondents).</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="82.05" urx="558.00" ury="164.76">
+  <Text>Of the six respondents to the Communication Partner questionnaire
+who indicated that they help AAC users to communicate or communicate
+faster, all six described themselves as having a moderator
+and/or facilitator role when communicating with the AAC user. Examples
+of these responses can be seen in Table 1. Additionally,
+when asked how comfortable the communication partners were
+with performing these actions to try and help the AAC user, five of
+the six respondents indicated on a five-point scale that they were</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="4" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<PlacedImage image="I0" x="78.01" y="605.72" width="192.10" height="120.28" />
+<Para>
+ <Box llx="54.00" lly="551.72" urx="294.12" ury="603.92">
+  <Text>Figure 1. Subjective ratings of AAC users&apos; comfort level with
+communication partners attempting to help them communicate
+broken down by relationship with 0 being &quot;Very Uncomfortable&quot;
+and 4 being &quot;Very Comfortable.&quot; Bars indicate standard
+error.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="488.47" urx="294.12" ury="529.06">
+  <Text>either “neutral,” “somewhat comfortable,” or “very comfortable.”
+Likewise, five of the six respondents indicated that they believed
+the AAC user to be either “neutral,” “somewhat comfortable,” or
+“very comfortable” with the assistance they rendered.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="461.26" urx="126.07" ury="472.26">
+  <Text>3.2.2 Autonomy</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="302.65" urx="294.12" ury="459.07">
+  <Text>Interestingly, the communication partners’ views were in contrast
+to those of the AAC users. Of the six respondents who frequently
+use their communication devices, four responded that they were
+either “neutral,” “somewhat uncomfortable,” or “very uncomfortable”
+(the lowest three ratings on a five-point scale) with spouses
+attempting to help them communicate or communicate faster and 5
+of the 6 respondents indicated the same for close friends (all communication
+partner respondents were spouses or close friends; see
+Table 2). When broken down by the type of relationship between
+the AAC user and the communication partner, there was a general
+trend indicating AAC users are most comfortable with communication
+assistance from those partners whom they are closest to socially
+(Figure 1). Additionally, AAC users were most comfortable
+sharing information from their device to those partners with whom
+they are closest (Figure 2).</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="273.18" urx="278.90" ury="285.18">
+  <Text>3.3 Discussion of Formative Study Findings</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="82.71" urx="294.12" ury="270.72">
+  <Text>Several implications for design emerged from the results of our formative
+study. Of greatest salience was the AAC users’ desire to
+maximize their autonomy. Due to the fact that degenerative neuromuscular
+diseases like ALS gradually remove a person’s ability to
+both manipulate the surrounding world and communicate with other
+people, they cause patients to gradually become more dependent
+on others in order to survive. These diseases are not often associated
+with cognitive deficits, meaning that patients are fully aware of
+the losses they are experiencing. Through statements such as those
+in Table 2, respondents made it clear that any AAC technologies
+developed for them must either preserve or increase what little autonomy
+they still have. While in theory all AAC technologies could
+be considered as aiming to support autonomy to various extents,
+our results indicate that current solutions are insufficient in this respect,
+and may inadvertently reduce a user’s autonomy, such as
+by creating behaviors such as over-the-shoulder peeking that negatively
+impacted our participants. We captured this in the first design
+guideline for the development of our new system: The AAC</Text>
+ </Box>
+</Para>
+<PlacedImage image="I2" x="341.89" y="602.90" width="192.10" height="123.10" />
+<Para>
+ <Box llx="317.88" lly="538.10" urx="558.00" ury="601.10">
+  <Text>Figure 2. Subjective ratings of AAC users&apos; comfort with sharing
+AAC device information with communication partners before
+choosing to render speech audibly. 0 is &quot;Share Nothing,&quot;
+1 is “Share Full Thoughts,” 2 is “Share Words,” 3 is “Share
+Characters,” and 4 is “Share Everything.” Bars indicate standard
+error.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="506.44" urx="500.93" ury="515.44">
+  <Text>system must preserve or increase users’ autonomy.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="259.75" urx="558.00" ury="500.41">
+  <Text>Another interesting result was the disconnect between how communication
+partners view interactions versus how AAC users view
+interactions. The first observation related to this result was that in
+the responses in Table 1, half of the partners describe looking over
+the AAC user’s shoulder as they type. While this may have ramifications
+on the autonomy of the AAC user, it also indicates that the
+communication partner has highly limited awareness of the current
+communication (i.e., up-to-the-moment understanding of the communication
+being formed on the AAC device) without observing
+the visual output of the AAC device intended for the device’s user.
+A second observation related to this theme was that communication
+partners want to help the AAC users to communicate and they
+are comfortable doing so, whereas AAC users are uncomfortable
+with help being rendered since it encroaches upon their perceived
+autonomy. Together, these observations indicate that AAC systems
+should be designed according to the previously discussed guideline
+of autonomy, but should also attempt to balance this with engaging
+the communication partners in a way that capitalizes on their desire
+to help the AAC user and provides them with an accurate mental
+model of the interaction. We formulated this into the second design
+guideline for our new system: The AAC system should directly
+engage communication partners (in a manner that respects the autonomy
+of the AAC user).</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="118.36" urx="557.99" ury="253.72">
+  <Text>The final core result was the concept of privacy among various
+types of communication partners. The AAC users indicated that
+they felt most comfortable with receiving communication help
+from their closest communication partners (such as spouses) and
+least comfortable receiving such help from general acquaintances
+or strangers. This was echoed in the amount of information respondents
+indicated they were willing to share with communication
+partners. These observations align well with Blackstone’s Circles
+of Communication Partners paradigm [5]. Taking inspiration from
+this paradigm, we synthesized these observations into the third design
+guideline for our new system: If the AAC system engages communication
+partners by sharing communication data, it must allow
+the AAC user to control how information is shared.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="88.88" urx="400.65" ury="100.88">
+  <Text>4. AACROBAT</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="77.43" urx="558.00" ury="86.43">
+  <Text>Given that the three design guidelines we synthesized from our for-</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="5" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<PlacedImage image="I4" x="54.00" y="521.89" width="504.00" height="204.12" />
+<Para>
+ <Box llx="54.00" lly="478.69" urx="558.00" ury="520.09">
+  <Text>Figure 1. Example of Asynchronous Messages (1, 1a, 1b, 1c) and Real-Time View of Synchronous Messages (2, 2a, 2b, 2c). The center
+image shows the entire interface of the AACrobat mobile companion app, incorporating the sections for both asynchronous and synchronous
+communication. 1a shows an example communication preference message, 1b shows a pre-composed block message, and
+1c shows a multimedia message. 2a – 2c show the propagation of communication data in real-time for synchronous messages.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="257.49" urx="294.11" ury="456.03">
+  <Text>mative study are in line with issues that have been established in
+previous literature [4], yet are still not adequately supported by current
+AAC systems, it is clear that we need to change the way we
+think and go about the design of AAC systems in order to actually
+support these core needs. To this end, it is helpful to understand
+how different models of disability have influenced the way we
+think about and design AAC systems. While many different models
+of disability exist [21], the medical model has most strongly
+influenced the design of current AAC systems. The medical model
+treats people with disabilities as patients to be fixed or cured,
+leading to the design of AAC technology that is focused on functional
+limitations of the disabled person (e.g. the ability to generate
+speech for people with ALS) with much less attention paid to
+other factors like the other individuals who also interact with the
+AAC technology (e.g., communication partners). In this work, we
+are inspired by the social model which instead treats disability as
+being socially constructed, and rather than attempting to fix people
+with disabilities, attempts to remove physical and attitudinal barriers
+preventing inclusion.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="95.04" urx="294.12" ury="251.46">
+  <Text>With the social model of disability in mind, we approached the
+design of AACrobat as a groupware system in which all communicators
+are working together to facilitate an effective communication,
+shifting the burden of communication from the AAC user
+to the entire group of communicators. In groupware, the concept
+of feedthrough [11] describes the feedback produced by a system
+when an artifact of the system is manipulated, informing other
+users of the system about the manipulation. In this design, we
+leverage feedthrough in order to provide all communicators with
+greater awareness of the AAC user’s communication with respect
+to the AAC user’s state, the content of the AAC user’s communication,
+and the context surrounding the communication. We leverage
+Gutwin’s definition of awareness in shared workspaces [12] to
+define awareness in this context as communication partners’ up-tothe-moment
+understanding of the AAC user’s communication.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="80.01" urx="294.10" ury="89.01">
+  <Text>We named our system AACrobat, a hybrid of “AAC” and “acrobat,”</Text>
+ </Box>
+ <Box llx="317.88" lly="320.67" urx="557.99" ury="456.03">
+  <Text>because like an agile acrobat, our system’s goal is to increase
+the agility of AAC users’ and partners’ communication styles.
+AACrobat consists of extensions to simple eye-typing AAC software
+plus a mobile companion app. The communication partners
+can install the mobile companion app on their phone for use when
+conversing with the AACrobat user. The eye-typing application is a
+dwell-based keyboard compatible with the Tobii EyeX sensor and
+the Windows 8.1/10 operating systems. The mobile companion app
+was developed using HTML5 and JavaScript in the Apache Cordova
+framework, allowing it to run on Android, iOS, and/or Windows
+Phone. Communication between the AAC software and the
+companion app is facilitated through a real-time NoSQL database
+system [38].</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="291.19" urx="383.30" ury="303.19">
+  <Text>4.1 Features</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="206.03" urx="557.99" ury="288.74">
+  <Text>We designed each of AACrobat’s features to address one or more
+of the design guidelines developed via our formative study. We developed
+AACrobat primarily to facilitate the scenario of face-toface,
+synchronous conversation (though some testers were interested
+in appropriating it for other conversational scenarios, as we discuss
+later in the User Feedback section). In this section, we present
+the major features of AACrobat within the context of the design
+guideline they target.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="178.82" urx="525.81" ury="189.82">
+  <Text>4.1.1 Engagement of Communication Partners</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="125.51" urx="557.99" ury="176.63">
+  <Text>The foremost goal of AACrobat is to engage and improve awareness
+of communication partners during co-located/synchronous
+conversations with AAC users. In order to accomplish this goal,
+AACrobat has two core features: real-time view of synchronous
+messages and asynchronous messages.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="98.30" urx="538.74" ury="109.30">
+  <Text>4.1.2.2 Real-Time View of Synchronous Messages</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="76.58" urx="558.00" ury="96.11">
+  <Text>The first feature designed to engage and improve awareness of
+communication partners in synchronous communication is the real-</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="6" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<PlacedImage image="I6" x="78.01" y="538.26" width="192.10" height="187.74" />
+<Para>
+ <Box llx="54.00" lly="484.26" urx="294.12" ury="536.46">
+  <Text>Figure 2. Example of co-construction functionality in the companion
+app inserting a suggestion into the prediction bar of the
+AAC application. When the communication partner sends a
+word or phrase suggestion, it appears in the AAC application’s
+prediction bar among the system-generated predictions.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="305.18" urx="294.11" ury="461.60">
+  <Text>time view of synchronous messages (Figure 3). This feature displays
+the communication content that the AAC user is generating
+as they generate it, within the AACrobat mobile companion app,
+acting as an explicit feedthrough mechanism for the communication
+content. This provides communication partners with an accurate
+awareness of the content of the ongoing communication and
+potentially allows them better understand what the AAC user is attempting
+to say. This feature is a distinct shift from designs based
+in the medical model in that it allows for AAC-mediated conversations
+to be continuous in the same way as traditional speech-based
+conversations (i.e. partners “hear” things as they are said), rather
+than simply allowing for the eventual generation of speech. An important
+effect of this feature is that it ensures that communication
+partners do not need to read over the shoulder of the AAC user
+when unsure of what the AAC user is attempting to write.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="277.97" urx="197.16" ury="288.97">
+  <Text>4.1.3.3 Asynchronous Messages</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="119.36" urx="294.11" ury="275.78">
+  <Text>The asynchronous message feature allows AAC users to prepare
+communication content before a synchronous interaction occurs.
+These messages are displayed at the bottom of the AACrobat mobile
+companion app (Figure 3), allowing communication partners
+to read them while the AAC user is constructing speech for the
+current synchronous conversation, offering content that can fill the
+conversational gaps that occur due to the low throughput of AAC
+communication. This is unique from standard message banking
+techniques in existing systems in that it is designed for sending
+messages specific to a given conversation the AAC device user
+wants to have, and it sends the messages automatically when the
+communication partner connects to the app, requiring no additional
+effort on the part of the AAC device user. Three types of asynchronous
+messages can be sent from an AAC device: communication
+preferences, pre-composed blocks, and multimedia.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="83.27" urx="294.11" ury="113.33">
+  <Text>“Communication Preference” messages are a medium for AAC
+users to express their preferred interactions and etiquette when
+communicating. For example, this could include messages such</Text>
+ </Box>
+ <Box llx="317.88" lly="645.46" urx="557.99" ury="738.70">
+  <Text>as, “Please ask only yes or no questions,” “For private conversations,
+please read over my shoulder so I do not have to display
+my thoughts for all to hear,” or “Please do not finish my thoughts
+for me.” These are particularly useful as a form of communication
+partner education, simplifying the process of instructing partners in
+the specific communication strategies and preferences of any given
+AAC user. Communication Preference messages are always displayed
+on the first time a communication partner connects with an
+AAC user through the AACrobat companion app.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="504.07" urx="558.00" ury="639.43">
+  <Text>“Pre-Composed Block” messages are general communications that
+the AAC user wishes to share with a communication partner, but
+would like to prepare ahead of a synchronous conversation. These
+messages serve to allow AAC users to compose longer or more
+complex thoughts than may be possible to construct during synchronous
+communication, thereby acting as a method for providing
+communication partners with awareness of the context for a given
+conversation. While Communication Preference messages are only
+displayed the first time a communication partner connects with an
+AAC user, all Pre-Composed Block messages that the AAC user
+created when the communication partner was not connected with
+them are available when the communication partner next connects
+with them through the AACrobat mobile app.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="383.74" urx="558.00" ury="498.04">
+  <Text>Finally, “Multimedia” messages allow AAC users to take pictures
+on their device and send them to the AACrobat companion app by
+dwelling their gaze on a camera-icon keyboard key. While this feature
+only currently supports sending images, it was designed so as
+to be easily extensible for sending any form of multimedia content
+that modern AAC devices, which typically utilize tablet computers,
+can capture (e.g., audio or video). Multimedia messages allow
+AAC users a rich channel for sharing their experiences with others,
+and can increase throughput by reducing the need to type descriptions
+of visual scenes, again supporting awareness of the context
+surrounding communication.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="356.53" urx="389.95" ury="367.53">
+  <Text>4.1.4 Autonomy</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="282.16" urx="558.00" ury="354.34">
+  <Text>Another design guideline derived from our formative study was the
+necessity for systems to embrace and enable the autonomy of the
+AAC user, beyond the level of autonomy provided by status quo
+solutions. We respected this design guideline throughout the development
+of AACrobat; two particular features have this motivation
+at their core: autonomy-preserving co-construction and status indicators.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="254.96" urx="526.35" ury="265.96">
+  <Text>4.1.5.5 Autonomy-Preserving Co-Construction</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="159.53" urx="558.00" ury="252.76">
+  <Text>Technology-assisted co-construction has the potential to improve
+the rate of communication of people using gaze-based AAC; however,
+the method through which co-construction is implemented
+can have significant effects on the perceived autonomy of the AAC
+user, as indicated by our formative study. Therefore, our implementation
+of co-construction through the AACrobat companion app
+was carefully designed to respect the autonomy of the AAC user
+while leveraging the contextual knowledge and shared history of
+the communication partner to potentially improve communication.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="81.31" urx="558.00" ury="153.50">
+  <Text>Figure 4 shows how communication partners can use the mobile
+app to send suggestions of words or phrases to the AAC device as
+the AAC user is constructing a block of text. These suggestions are
+displayed in the prediction bar of the AAC interface in the same
+manner as predictions provided by the AAC software. This subtle
+interaction empowers the AAC user by ensuring both that AAC
+users are not interrupted by communication partners guessing at</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="7" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Para>
+ <Box llx="317.88" lly="729.70" urx="472.45" ury="738.70">
+  <Text>they are simply listening to a conversation.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="702.49" urx="435.40" ury="713.49">
+  <Text>4.1.7 Privacy and Control</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="617.59" urx="557.99" ury="700.30">
+  <Text>While allowing end users to control privacy settings for sharing
+personal information in general applications is important, it is critical
+in the development of social AAC systems since limiting privacy
+may have the effect of limiting the autonomy of AAC users.
+To this end, AACrobat provides two features that allow AAC users
+to customize exactly what information is shared with communication
+partners and how that information is shared: mobile audio and
+levels of sharing.</Text>
+ </Box>
+</Para>
+<PlacedImage image="I8" x="78.01" y="584.88" width="192.10" height="141.12" />
+<Para>
+ <Box llx="54.00" lly="563.28" urx="294.11" ury="583.08">
+  <Text>Figure 3. Indicators for device state (left) and AAC user state
+(right).</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="457.91" urx="294.11" ury="540.62">
+  <Text>what they are typing, and that AAC users have absolute control
+over the degree to which they utilize co-constructions from their
+communication partners. Additionally, this interaction has the benefit
+of further engaging communication partners by providing them
+a method to directly interact with the block of communication as
+it unfolds rather than simply waiting for a block of communication
+to be completed before hearing it spoken by the system’s generated
+speech.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="430.70" urx="164.56" ury="441.70">
+  <Text>4.1.6.6 Status Indicators</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="82.55" urx="294.12" ury="428.51">
+  <Text>In the formative study, it was clear that communication partners did
+not always have an accurate awareness or understanding of what
+was occurring on an AAC device without looking over the device
+user’s shoulder to view the device’s visual state. When communication
+partners look over the AAC user’s shoulder instead of communicating
+face-to-face, it decreases the device user’s autonomy
+by making their ability to communicate and interact with others
+dependent upon the communication partner’s effort, as well as being
+an awkward invasion of their personal space, and of the privacy
+of items on their screen that they may not wish to share. To
+minimize this effect, AACrobat was designed to incorporate simple
+visual feedback indicators of the state of the AAC device at
+several different levels within the mobile companion app (Figure
+5). This feature is reminiscent of status indicators in mainstream
+Instant Messaging applications that reveal simple state information
+such as whether another user is currently typing or not; however,
+status indicators are typically used in remote communication scenarios
+– due to the unique constraints of face-to-face communication
+with eye-gaze AAC users, we have adapted this concept to a
+co-located scenario. At the coarsest level of information, the app
+has indicators to show whether the AAC device is offline, the AAC
+user is calibrating the gaze system, or the AAC device is operating
+normally. This provides general feedback to the communication
+partner as to whether the device is malfunctioning or not. At
+a finer-grained level of information, AACrobat indicates what the
+AAC user’s current state is within the system. This includes states
+for when the user is idle, typing, or “speaking” (having composed
+text read aloud via a synthesizer); it could easily be extended to include
+additional states such as “emergency” or “assistance needed”
+based on explicit signaling from the AAC user or readings of the
+state of the AAC user’s communication and healthcare apparatus.
+This level of feedback makes it possible for communication partners
+to know when the AAC user is forming a thought versus when</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="590.39" urx="413.77" ury="601.39">
+  <Text>4.1.8.8 Mobile Audio</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="473.89" urx="558.00" ury="588.20">
+  <Text>This novel interaction allows AAC users to play generated speech
+either from their own device (broadcast audio, audible to all people
+in a room) or on the connected mobile phones (mobile audio, audible
+only to connected mobile app users). This allows the AAC user
+to decide whether or not they wish to have a public conversation
+or a private or side conversation, breaking down a long-standing
+communication barrier present in many current AAC devices. Additionally,
+in conjunction with the real-time view of synchronous
+messages feature, mobile audio has the potential to enable telephony-like
+long distance communication, though it was originally designed
+for co-located communication.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="446.69" urx="430.56" ury="457.69">
+  <Text>4.1.9.9 Levels of Sharing</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="77.48" urx="558.00" ury="444.50">
+  <Text>The levels of sharing feature allows AAC users to decide what
+granularity of communication data partners are able to see in the
+companion app. This feature was designed to strike a balance between
+two competing issues. First, gaze input is relatively slow
+and tedious, therefore requiring users to explicitly set privacy permissions
+for every connected communication partner could make
+the system too tedious to use. Second, as determined in the formative
+study, AAC users want to share different amounts of information
+with different types of communication partners (e.g., share
+more with family and less with general acquaintances). We therefore
+took inspiration for the design of the privacy settings interface
+from the Circles of Communication Partners paradigm [5,8],
+allowing AAC users to classify communication partners into social
+circles and set privacy permissions for entire circles rather
+than individual partners. AACrobat currently includes the five social
+circles “Family,” “Friends,” “Work,” “Medical,” and “Other”
+that directly correspond with Blackstone’s original circles “Family,”
+“Friends,” “Acquaintances,” “Paid Workers,” and “Unfamiliar
+Partners” [5].This is both a user management feature and a privacy
+feature. Communication partners must request to connect with an
+AAC user through the companion application and the AAC user
+must approve the request and place the communication partner into
+a social circle before the communication partner will be able to
+see any information from the AAC device. AAC users can then
+use a simple interface to set the permissions for an entire circle of
+communication partners. This allows users to limit the amount of
+information presented in the real-time view of synchronous messages
+feature to either show updates character-by-character, wordby-word,
+sentence-by-sentence, block-by-block (fully composed
+thoughts, shared as text via the app only when the AAC user decides
+to render that block aloud via the voice synthesizer), or to only
+show status information and not show text at all. In order to reduce
+the amount of effort required from AAC users, we chose sensible
+defaults for these privacy settings, setting “Family” to character-by-character,
+“Friends” and “Medical” to word-by-word, and</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="8" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Para>
+ <Box llx="54.00" lly="729.70" urx="196.39" ury="738.70">
+  <Text>“Work” and “Other” to block-by-block.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="700.22" urx="170.60" ury="712.22">
+  <Text>5. USER FEEDBACK</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="467.64" urx="294.12" ury="697.77">
+  <Text>Due to the nature of ALS being a very low-incidence disease (2
+per 100,000) [25] that causes extreme mobility challenges, reaching
+many people with ALS for in-depth studies with a large number
+of participants is very challenging. We therefore decided to focus
+initially on direct case-study-based feedback, observing a small
+number of people with ALS using AACrobat to have a conversation
+with their spouse or caregiver. Of course, all methods have
+their drawbacks; we must be cautious not to over-generalize from
+the experience of a small number of users, and must also be cognizant
+of increased risks of overly-positive reactions from short deployments
+due to effects such as social desirability or novelty biases.
+Additionally, there are challenges in balancing the amount
+of in-depth feedback from participants with ALS as compared to
+that from their communication partners during a short deployment
+given the constraints of qualitative research involving people with
+complex communication needs. Larger and longer-term deployments
+will be important to gaining more systematic understanding
+of the successes and shortcomings of AACrobat’s innovative features;
+however, these initial case-study observations provide initial
+insight into user perceptions of this new communication style, and
+offer insights that can guide future development and evaluation efforts
+for AAC technologies by ourselves and others.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="438.16" urx="156.97" ury="450.16">
+  <Text>5.1 Case Study One</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="258.23" urx="294.12" ury="435.71">
+  <Text>The first case study involved Jane, an ALS patient who is completely
+dependent upon her Tobii AAC device for communication,
+and her husband Bob. Jane lives in a full-time care facility due to
+her advanced medical needs. Her husband visits her frequently, and
+speaks to her on the phone every evening. For the study, a Microsoft
+Surface Pro 3 with an attached Tobii EyeX sensor and running
+the AACrobat system was attached to Jane’s power wheelchair
+in the same position her standard Tobii device is connected.
+She was provided instruction on how the complete system worked
+and was given time to explore the AAC software and practice generating
+speech with it. Bob was provided with a smartphone running
+the AACrobat companion application. He was instructed on
+how to use the system and was provided time to explore the features.
+When Jane and Bob indicated that they were comfortable
+with the system, they were instructed to converse about any subject
+they wished, with the goal being for them to have an in-depth
+conversation.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="169.49" urx="294.12" ury="252.20">
+  <Text>Jane and Bob began conversing about Jane’s childhood, but quickly
+devolved into discussing the AACrobat system itself. Bob was
+immediately interested in the real-time view of synchronous messages,
+saying, “I can follow her thoughts by seeing it printed out,
+and see where the conversation is going” and “It’s funny. I had the
+preconception that I would do better with block conversation, but I
+can follow it as it comes up here” referring to Jane’s conversation
+appearing on the smartphone’s screen.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="80.75" urx="294.11" ury="163.46">
+  <Text>Bob also noted that with this system, new types of interactions
+would be possible for them, such as richer remote communication
+[a use we had not specifically designed for, but which emerged
+from AACrobat’s affordances for multimodal interaction]; talking
+about their daily phone calls, Bob said, “I call and she can answer
+the phone, but she is very limited in what she says… It’s usually
+just me jabbering away and she says hello.” Jane explained that she
+uses the “Hello” button on her Tobii device to have yes/no conversations</Text>
+ </Box>
+ <Box llx="317.88" lly="698.11" urx="558.00" ury="738.70">
+  <Text>on her Tobii by selecting “Hello” once for yes and twice for
+no. Both were excited that AACrobat would change the way their
+daily phone calls occur. Bob said, “I would have communication at
+home with this, where I don’t have anything now.”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="514.60" urx="557.99" ury="692.08">
+  <Text>Jane was excited that AACrobat could provide her with better conversations
+where Bob was more engaged, saying, “I like having a
+purpose… I’m kinda [sic] social” and “I love that Bob is staying
+more engaged with the conversation!” Additionally, on three occasions,
+Bob laughed in response to the text Jane was typing before
+Jane had completed her thought or played the generated speech.
+Related to this type of backchannel communication, Bob was not
+always sure of how to tell when Jane had finished typing a thought.
+He asked twice how he could tell if Jane was done with a thought in
+instances where Jane had typed a thought and then she was laughing
+but had not hit the “play” button to generate speech from her
+text. A final interesting observation was that when Jane was typing
+out a longer thought, she accidentally hit the “clear” button and
+deleted all of her text. While she was no longer able to generate
+speech for this text, Bob had already read all of the text on his
+phone as she typed it originally, so the conversation was not stalled
+or slowed down because of this speech playback error.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="485.12" urx="421.34" ury="497.12">
+  <Text>5.2 Case Study Two</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="368.37" urx="558.00" ury="482.67">
+  <Text>The second case study included James and his wife Rhonda. Similar
+to Jane, James is completely dependent on his Tobii speech
+generation device to communicate. James lives at home with his
+wife and a full-time nurse caregiver. Even though James has no independent
+mobility, he is still an active professional, working in a
+high-power position that requires him to frequently give in-depth
+and complicated presentations on strategic business operation issues.
+To accomplish this, James spends large numbers of hours focused
+on typing both the content of his presentations and preparing
+ahead of time any answers to questions he predicts might be asked
+of him when presenting.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="132.21" urx="558.00" ury="362.34">
+  <Text>In a similar fashion to the setup of the first case study, the Microsoft
+Surface and Tobii EyeX Sensor running AACrobat were attached
+to James’ wheelchair and the system was explained to him.
+Unfortunately, the EyeX sensor was unable to consistently track
+James’ eyes on the day of the study. Rhonda explained that this issue
+of the eye tracker not being able to track James’ eyes is a recurring
+issue that occurs with James’ current Tobii device as well.
+This may be caused by medication that causes James’ eyes to dilate,
+although we were unable to determine the actual cause during
+our study. For this reason, instead of having James and Rhonda
+try out the system themselves, we demoed the system, explained
+all of the available features, and had an open discussion of their
+thoughts regarding AACrobat. We recognize that viewing a demo
+rather than trying the system reduces the fidelity of the feedback
+James and Rhonda were able to provide; however, due to the challenges
+involved in conducting studies with this population (recruiting
+from a very small subject pool, coordinating travel over long
+distances for study sessions, scheduling studies around medical appointments,
+the fatigue and effort involved for participants), adapting
+study techniques on the fly to make the most of participants’
+capabilities on a particular day is a reality and necessity for this
+class of research.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="75.06" urx="558.00" ury="126.18">
+  <Text>Rhonda was particularly interested in the status indicators feature
+since she envisioned that she could use it to tell when James’ system
+is not working when she is not located in the same room as
+him. She said, “I appreciate it; just those ‘is it working’ or ‘is it
+not’ [status indicators]. [If] I’m in another part of the house, that’s</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="9" width="612.00" height="792.00">
+<Options> granularity=page tetml={}</Options>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Para>
+ <Box llx="54.00" lly="519.10" urx="294.12" ury="738.70">
+  <Text>strong, because he can’t do anything to tell me it’s not working
+when I’m in another part of the house. [i.e., if he is attempting
+to use his system to communicate with someone else or pre-composing
+offline text for his professional needs]” Additionally, Rhonda
+and James were excited about the prospect of how AACrobat
+could change the dynamics of his business meetings. Rhonda
+said, “At least five of those things you mentioned [AACrobat features],
+that’s what I do [to support James’ communication with colleagues]
+during meetings... You are making me obsolete, which I
+would love to be.” Rhonda noted one feature that AACrobat does
+not currently have that would be useful to further improve James’
+meetings; she said that James “is a really good multi-tasker,” so
+it would be useful if people in the business meetings could send
+their more complicated questions directly to James’ AAC device in
+a similar manner to how suggestions are sent to the prediction bar
+of the AAC device, to allow James to respond to questions asynchronously.
+Overall, Rhonda and James were very excited about
+the system, and Rhonda explained that seeing the potential for this
+system gave them hope: “You are making us feel so unstuck. Before,
+it was, ‘We have to have the resolve to deal with what we have
+got.’”</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="489.62" urx="166.10" ury="501.62">
+  <Text>5.3 Case Study Three</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="320.22" urx="294.11" ury="487.17">
+  <Text>The final case study looked at Steven and his girlfriend Jessica.
+Steven was only recently diagnosed with ALS (within the last two
+years), but the disease progressed very rapidly, leaving him mostly
+dependent on his Tobii speech generation device for communication,
+supplemented by occasional attempts to speak with his
+highly disarthric speech. As with both of the previous case studies,
+the Microsoft Surface and Tobii EyeX Sensor running AACrobat
+were attached to Steven’s wheelchair and the system was explained
+to him. Steven was provided with time to explore the AAC software
+and practice with it. Jessica was provided with a smartphone
+running the companion app and was provided with instruction and
+time to explore the application. When both were ready, they were
+provided with the same prompt and instructions as in the first case
+study. Jessica and Steven spent their time discussing recent events
+regarding friends and family, and occasionally provided feedback
+regarding the AACrobat system.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="94.59" urx="294.12" ury="314.19">
+  <Text>Jessica noted early on that she kept wanting to use the co-construction
+feature to send messages directly to Steven rather than sending
+word or phrase suggestions. This is similar to the “question submission”
+feature requested by Rhonda in the previous case study.
+When asked if there were any features that they found useful, Jessica
+replied, “I think that the suggestions [co-construction feature]…
+To me that was helpful… I can guess the word and he can move
+on,” although Steven said that he “needs more time with it” to
+know if the co-construction feature would actually be useful to
+him. Jessica also discussed how she would like to use AACrobat
+for long-distance communication: “I think we would use that a
+lot [the real-time view of synchronous messages feature], because
+Steven can’t really text anymore and he used to text a lot, and that
+would be like texting like when I’m at work. I can imagine being
+at work and him sending stuff to me.” Finally, an interesting observation
+of how Steven used the system was that he often would type
+and generate speech for a thought and then gaze in the direction of
+the person he intended to direct that thought at. This indicates that
+having a feature that allows AAC users to select a specific communication
+partner to direct a block of communication at (rather than
+all connected users) could be a useful addition to AACrobat.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="726.75" urx="514.16" ury="738.75">
+  <Text>5.4 Discussion of Case Study Findings</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="536.29" urx="558.00" ury="724.30">
+  <Text>While these case studies were informal and were highly limited
+with respect to both the amount of time users were able to work
+with the system (between one and two hours) and the total number
+of case studies, they nonetheless provided useful feedback for directing
+the future development and testing of the AACrobat system.
+Interestingly, each of the three sets of users were most excited
+by different features of AACrobat. In the first case study, the realtime
+view of synchronous messages feature was very successful at
+engaging all parties in the conversation with both Jane and Bob
+commenting on how much more engaged Bob was. This was directly
+due to the fact that rather than having to wait to hear what
+Jane had been trying to communicate, Bob was able to follow
+along as she constructed her thought. In case study two, Rhonda
+was excited about the status indicators feature in that it would help
+to moderate James’ business meetings in the way that she used to
+have to do herself. Finally, in the third case study, Jessica was excited
+about having the ability to participate in co-construction with
+Steven due to the potential to speed up his rate of communication.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="415.96" urx="557.99" ury="530.26">
+  <Text>A key unintended use for current features emerged from the case
+studies as important parts of AACrobat: participants noted that the
+real-time view of synchronous messages feature was potentially
+useful for remote conversations such as telephone calls or textmessage-like
+communication, or even simple awareness of urgent
+needs or device breakdowns when in a different room of their home
+than the AAC user. This leads us to add a fourth design guideline
+to our initial set of guidelines for AAC design: The AAC system
+should enable face-to-face communication, but should also support
+other forms of communication in which the involved parties are not
+co-located.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="285.10" urx="557.99" ury="409.93">
+  <Text>Additionally, while AACrobat was originally designed with the
+idea that communication partners would contribute to the conversation
+through speech, it became clear in both case studies two
+and three that communication partners expected to be able to send
+text communications directly back to the AAC device through the
+companion app. This would enable both private conversations and
+complex conversations that require the AAC user to have more
+time to construct a response than is available in a synchronous conversation.
+Therefore, an additional design guideline should be considered
+in future work on AAC systems: The AAC system should
+enable verbal and textual communication in a two-way fashion instead
+of the current one-way status quo.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="255.62" urx="424.49" ury="267.62">
+  <Text>6. FUTURE WORK</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="75.69" urx="557.99" ury="253.17">
+  <Text>Looking towards future work, we plan to complement the informal
+case-study approach used in this initial research by conducting
+longer-term deployments of AACrobat, to compare its use to more
+traditional AAC systems in a controlled study, an approach that
+will be valuable for gaining more nuanced insight into the utility
+and challenges ultimately afforded by AACrobat’s features. Given
+that AACrobat was designed with the goal of facilitating better
+communication for all interlocutors rather than faster communication
+for the AAC user, it does not make sense to evaluate a
+long term deployment in terms of throughput as many previous
+AAC systems have done. It will be critical to consider what measures
+best evaluate the effectiveness of AACrobat in terms of the
+satisfaction of all communicators involved. For example, beyond
+throughput, other important measures may be the level of engagement
+of the communication partners, the relative balance of conversational
+turns between AAC users and partners, fatigue levels,
+perceptions of autonomy, ability to express oneself fully, etc. Re-</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Page number="10" width="612.00" height="792.00" hasdefaultrgb="true">
+<Options> granularity=page tetml={}</Options>
+<Annotations>
+<Annotation id="ANN0" type="Link">
+ <Box llx="485.36" lly="582.04" urx="552.18" ury="592.00"/>
+ <Action type="URI" trigger="activate" URI="http://doi.acm.org/10.1145/161468.16147"/>
+</Annotation>
+<Annotation id="ANN1" type="Link">
+ <Box llx="340.38" lly="571.24" urx="423.55" ury="581.20"/>
+ <Action type="URI" trigger="activate" URI="http://doi.acm.org/10.1145/161468.16147"/>
+</Annotation>
+<Annotation id="ANN2" type="Link">
+ <Box llx="340.38" lly="468.04" urx="494.87" ury="478.01"/>
+ <Action type="URI" trigger="activate" URI="http://doi.acm.org/10.1145/332040.332491"/>
+</Annotation>
+<Annotation id="ANN3" type="Link">
+ <Box llx="340.38" lly="294.05" urx="494.87" ury="304.02"/>
+ <Action type="URI" trigger="activate" URI="http://doi.acm.org/10.1145/964696.964697"/>
+</Annotation>
+<Annotation id="ANN4" type="Link">
+ <Box llx="340.38" lly="247.86" urx="494.47" ury="257.82"/>
+ <Action type="URI" trigger="activate" URI="http://dx.doi.org/10.1016/j.jss.2005.05.030"/>
+</Annotation>
+<Annotation id="ANN5" type="Link">
+ <Box llx="340.38" lly="201.66" urx="485.87" ury="211.63"/>
+ <Action type="URI" trigger="activate" URI="http://doi.acm.org/10.1145/90417.90738"/>
+</Annotation>
+<Annotation id="ANN6" type="Link">
+ <Box llx="363.70" lly="133.86" urx="521.21" ury="143.83"/>
+ <Action type="URI" trigger="activate" URI="http://dx.doi.org/10.1145/2493394.2493405"/>
+</Annotation>
+</Annotations>
+<Content granularity="page" dehyphenation="false" dropcap="false" font="false" geometry="false" shadow="false" sub="false" sup="false">
+<Para>
+ <Box llx="54.00" lly="687.58" urx="294.12" ury="738.70">
+  <Text>examining the measures appropriate for the evaluation of AAC devices
+in light of the shift in framing from the medical model to the
+social model of disability and from single-user devices to groupware
+systems is an important issue for the research and AAC tech
+communities to consider.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="504.07" urx="294.12" ury="681.55">
+  <Text>While a long term deployment does present the opportunity to
+gather rich data, long term deployments for systems like AACrobat
+also present several significant challenges that are worth noting.
+This includes challenges of recruitment and elicitation of in-depth
+feedback, but the foremost challenge is the fact that AAC users require
+a host of features like e-mail, TV control, and internet browsing
+that are present in modern AAC software stacks, but are not
+present in an experimental framework like the one AACrobat is
+built upon. Without a full AAC device stack to integrate AACrobat
+into, the amount and type of feedback we can expect from participants
+is limited since participants will need to switch between their
+primary AAC system and the experimental system throughout the
+deployment. We hope that by placing the ideas central to AACrobat
+in the public domain through this academic publication, manufacturers
+of AAC technology may be inspired to incorporate our
+design perspectives and/or system features into their technologies
+to allow for wider-spread and longer-term deployments.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="474.59" urx="150.30" ury="486.59">
+  <Text>7. CONCLUSION</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="231.48" urx="294.12" ury="472.14">
+  <Text>In this paper, we introduced AACrobat, a novel AAC system designed
+as groupware that engages communication partners while
+respecting the privacy and autonomy of the AAC user. In order
+to design a system grounded by end-user needs, we conducted a
+formative, qualitative study of gaze-based AAC users and their
+communication partners, from which we formulated three design
+guidelines of embracing the autonomy of the AAC user, engaging
+the communication partner, and providing privacy and control to
+the AAC user. We then developed AACrobat, a novel AAC system
+consisting of a set of extensions to a dwell-based gaze keyboard
+and a mobile companion app, introducing several novel features
+and interactions, such as pairing the AAC device with a mobile device
+for partners that allows privacy-sensitive previews of communications
+for partners, facilitates co-construction, and allows multi-modal
+communication, side conversations, and downtime fillers,
+among other innovations. We gathered feedback on the AACrobat
+prototype from participants with ALS and their communication
+partners through a set of three informal case studies. This feedback
+indicated that AACrobat’s features resonated with the target
+audience, and unanticipated appropriations of these features led us
+to augment our design guidelines with two further items: enabling
+disparate forms of communication and enabling two-way textual
+communication.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="54.00" lly="132.21" urx="294.11" ury="225.45">
+  <Text>While we integrated AACrobat into a proprietary eye gaze keyboard,
+the key features of AACrobat would be relatively straightforward
+to integrate into any existing AAC device with an eye gaze
+keyboard; indeed, we hope AAC manufacturers will be inspired to
+incorporate the innovative interactions we introduce in the AACrobat
+prototype into mainstream devices. Even modest improvements
+in AAC interactions can have a huge quality of life impact on people
+with ALS and their communication partners. This paper contributes
+design insights and new interaction styles that researchers</Text>
+ </Box>
+ <Box llx="317.88" lly="729.70" urx="552.42" ury="738.70">
+  <Text>can build upon to guide the future development of AAC systems.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="700.22" urx="474.12" ury="712.22">
+  <Text>8. ACKNOWLEDGEMENTS</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="646.65" urx="558.00" ury="697.77">
+  <Text>We would like to thank the ALS Association for distributing our
+announcements to potential participants, and to all of our formative
+study and case study participants. We would also like to thank
+the members of the NExT Enable Team at Microsoft Research for
+making this project possible.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="617.17" urx="448.92" ury="629.17">
+  <Text>9. FAKE REFERENCES</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="605.58" urx="328.37" ury="614.58">
+  <Text>[1]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="559.39" urx="328.37" ury="568.39">
+  <Text>[2]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="523.99" urx="328.37" ury="532.99">
+  <Text>[3]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="456.19" urx="328.37" ury="465.19">
+  <Text>[4]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="431.60" urx="328.37" ury="440.60">
+  <Text>[5]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="385.40" urx="328.37" ury="394.40">
+  <Text>[6]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="350.00" urx="328.37" ury="359.00">
+  <Text>[7]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="282.20" urx="328.37" ury="291.20">
+  <Text>[8]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="236.01" urx="328.37" ury="245.01">
+  <Text>[9]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="317.88" lly="189.81" urx="332.87" ury="198.81">
+  <Text>[10]</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="573.18" urx="555.43" ury="614.58">
+  <Text>Bowman, M., Debray, S. K., and Peterson, L. L. 1993. Reasoning
+about naming systems. ACM Trans. Program. Lang.
+Syst. 15, 5 (Nov. 1993), 795-825. DOI= http://doi.acm.org/
+10.1145/161468.16147.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="537.79" urx="555.76" ury="568.39">
+  <Text>Ding, W. and Marchionini, G. 1997. A Study on Video
+Browsing Strategies. Technical Report. University of Maryland
+at College Park.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="469.99" urx="555.17" ury="532.99">
+  <Text>Fröhlich, B. and Plate, J. 2000. The cubic mouse: a new device
+for three-dimensional input. In Proceedings of the
+SIGCHI Conference on Human Factors in Computing Systems
+(The Hague, The Netherlands, April 01 - 06, 2000).
+CHI &apos;00. ACM, New York, NY, 526-531. DOI=
+http://doi.acm.org/10.1145/332040.332491.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="445.39" urx="556.70" ury="465.19">
+  <Text>Tavel, P. 2007. Modeling and Simulation Design. AK Peters
+Ltd., Natick, MA.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="399.20" urx="555.00" ury="440.60">
+  <Text>Sannella, M. J. 1994. Constraint Satisfaction and Debugging
+for Interactive User Interfaces. Doctoral Thesis. UMI
+Order Number: UMI Order No. GAX95-09398., University
+of Washington.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="363.80" urx="548.42" ury="394.40">
+  <Text>Forman, G. 2003. An extensive empirical study of feature
+selection metrics for text classification. J. Mach. Learn.
+Res. 3 (Mar. 2003), 1289-1305.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="296.00" urx="556.45" ury="359.00">
+  <Text>Brown, L. D., Hua, H., and Gao, C. 2003. A widget framework
+for augmented interaction in SCAPE. In Proceedings
+of the 16th Annual ACM Symposium on User Interface Software
+and Technology (Vancouver, Canada, November 02 -
+05, 2003). UIST &apos;03. ACM, New York, NY, 1-10. DOI=
+http://doi.acm.org/10.1145/964696.964697.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="249.80" urx="554.42" ury="291.20">
+  <Text>Yu, Y. T. and Lau, M. F. 2006. A comparison of MC/DC,
+MUMCUT and several other coverage criteria for logical
+decisions. J. Syst. Softw. 79, 5 (May. 2006), 577-590. DOI=
+http://dx.doi.org/10.1016/j.jss.2005.05.030.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="203.61" urx="556.32" ury="245.01">
+  <Text>Spector, A. Z. 1989. Achieving application requirements. In
+Distributed Systems, S. Mullender, Ed. ACM Press Frontier
+Series. ACM, New York, NY, 19-33. DOI=
+http://doi.acm.org/10.1145/90417.90738.</Text>
+ </Box>
+</Para>
+<Para>
+ <Box llx="340.38" lly="135.81" urx="557.87" ury="198.81">
+  <Text>Park, T. H., Saxena, A., Jagannath, S., Wiedenbeck, S., and
+Forte, A. 2013. Towards a taxonomy of errors in HTML and
+CSS. In Proceedings of the ACM International Computing
+Education Research Conference (San Diego, USA, August
+12 - 14, 2013). ICER &apos;13. ACM, New York, NY, 75-82.
+DOI= http://dx.doi.org/10.1145/2493394.2493405.</Text>
+ </Box>
+</Para>
+</Content>
+</Page>
+<Resources>
+<Fonts>
+ <Font id="F0" name="Helvetica-Bold" fullname="PXAAAA+Helvetica-Bold" type="TrueType" embedded="true" ascender="770.00" capheight="1474.00" italicangle="0.00" descender="-229.00" weight="700.00" xheight="508.00"/>
+ <Font id="F1" name="Helvetica" fullname="PXAAAB+Helvetica" type="TrueType" embedded="true" ascender="770.00" capheight="1469.00" italicangle="0.00" descender="-229.00" weight="400.00" xheight="508.00"/>
+ <Font id="F2" name="TimesNewRomanPS-BoldMT" fullname="PXAAAC+TimesNewRomanPS-BoldMT" type="TrueType" embedded="true" ascender="891.00" capheight="1356.00" italicangle="0.00" descender="-216.00" weight="700.00" xheight="588.00"/>
+ <Font id="F3" name="TimesNewRomanPSMT" fullname="PXAAAD+TimesNewRomanPSMT" type="TrueType" embedded="true" ascender="891.00" capheight="1356.00" italicangle="0.00" descender="-216.00" weight="400.00" xheight="588.00"/>
+ <Font id="F4" name="TimesNewRomanPS-ItalicMT" fullname="PXAAAE+TimesNewRomanPS-ItalicMT" type="TrueType" embedded="true" ascender="891.00" capheight="1356.00" italicangle="-16.33" descender="-216.00" weight="400.00" xheight="588.00"/>
+</Fonts>
+<Images>
+ <Image id="I0" filename="paper_I0.tif" extractedAs=".tif" width="436" height="273" colorspace="CS1" bitsPerComponent="8" maskid="I1"/>
+ <Image id="I1" filename="paper_I1.tif" extractedAs=".tif" width="436" height="273" colorspace="CS0" bitsPerComponent="8"/>
+ <Image id="I2" filename="paper_I2.tif" extractedAs=".tif" width="426" height="273" colorspace="CS2" bitsPerComponent="8" maskid="I3"/>
+ <Image id="I3" filename="paper_I3.tif" extractedAs=".tif" width="426" height="273" colorspace="CS0" bitsPerComponent="8"/>
+ <Image id="I4" filename="paper_I4.tif" extractedAs=".tif" width="1042" height="422" colorspace="CS3" bitsPerComponent="8" maskid="I5"/>
+ <Image id="I5" filename="paper_I5.tif" extractedAs=".tif" width="1042" height="422" colorspace="CS0" bitsPerComponent="8"/>
+ <Image id="I6" filename="paper_I6.tif" extractedAs=".tif" width="441" height="431" colorspace="CS4" bitsPerComponent="8" maskid="I7"/>
+ <Image id="I7" filename="paper_I7.tif" extractedAs=".tif" width="441" height="431" colorspace="CS0" bitsPerComponent="8"/>
+ <Image id="I8" filename="paper_I8.tif" extractedAs=".tif" width="505" height="371" colorspace="CS5" bitsPerComponent="8" maskid="I9"/>
+ <Image id="I9" filename="paper_I9.tif" extractedAs=".tif" width="505" height="371" colorspace="CS0" bitsPerComponent="8"/>
+</Images>
+<ColorSpaces>
+ <ColorSpace id="CS0" name="DeviceGray" components="1"/>
+ <ColorSpace id="CS1" name="ICCBased" components="3" iccprofile="ICC0"/>
+ <ColorSpace id="CS2" name="ICCBased" components="3" iccprofile="ICC0"/>
+ <ColorSpace id="CS3" name="ICCBased" components="3" iccprofile="ICC0"/>
+ <ColorSpace id="CS4" name="ICCBased" components="3" iccprofile="ICC0"/>
+ <ColorSpace id="CS5" name="ICCBased" components="3" iccprofile="ICC0"/>
+ <ColorSpace id="CS6" name="ICCBased" components="3" iccprofile="ICC0"/>
+</ColorSpaces>
+</Resources>
+<Graphics>
+<Colors>
+ <Color id="C0" colorspace="CS0" svgname="black">
+  <Value>0.00</Value>
+ </Color>
+ <Color id="C1" colorspace="CS6" svgname="blue">
+  <Value>0.00</Value>
+  <Value>0.00</Value>
+  <Value>1.00</Value>
+ </Color>
+</Colors>
+<ICCProfiles>
+ <ICCProfile id="ICC0" embedded="true" iccversion="2.0" profilename="sRGB IEC61966-2-1 black scaled" checksum="29F83DDEAFF255AE7842FAE4CA83390D" profilecs="RGB " deviceclass="mntr" fromCIE="true" toCIE="true"/>
+</ICCProfiles>
+</Graphics>
+</Pages>
+<Destinations>
+ <Destination id="D0" page="1" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="738.0"/>
+ <Destination id="D1" page="1" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="589.0"/>
+ <Destination id="D2" page="1" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="348.0"/>
+ <Destination id="D3" page="1" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="286.0"/>
+ <Destination id="D4" page="1" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="245.0"/>
+ <Destination id="D5" page="2" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="657.0"/>
+ <Destination id="D6" page="2" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="102.0"/>
+ <Destination id="D7" page="3" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="456.0"/>
+ <Destination id="D8" page="3" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="327.0"/>
+ <Destination id="D9" page="3" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="298.0"/>
+ <Destination id="D10" page="4" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="472.0"/>
+ <Destination id="D11" page="4" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="284.0"/>
+ <Destination id="D12" page="4" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="100.0"/>
+ <Destination id="D13" page="5" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="302.0"/>
+ <Destination id="D14" page="5" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="189.0"/>
+ <Destination id="D15" page="5" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="109.0"/>
+ <Destination id="D16" page="6" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="288.0"/>
+ <Destination id="D17" page="6" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="367.0"/>
+ <Destination id="D18" page="6" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="265.0"/>
+ <Destination id="D19" page="7" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="441.0"/>
+ <Destination id="D20" page="7" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="713.0"/>
+ <Destination id="D21" page="7" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="601.0"/>
+ <Destination id="D22" page="7" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="457.0"/>
+ <Destination id="D23" page="8" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="711.0"/>
+ <Destination id="D24" page="8" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="449.0"/>
+ <Destination id="D25" page="8" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="496.0"/>
+ <Destination id="D26" page="9" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="501.0"/>
+ <Destination id="D27" page="9" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="738.0"/>
+ <Destination id="D28" page="9" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="267.0"/>
+ <Destination id="D29" page="10" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="486.0"/>
+ <Destination id="D30" page="10" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="711.0"/>
+ <Destination id="D31" page="10" type="XYZ" left="0.0" bottom="0.0" right="612.0" top="628.0"/>
+</Destinations>
+</Document>
+</TET>
